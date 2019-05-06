@@ -1,0 +1,243 @@
+.modal {
+    &[data-modal-id="modal-adolescence"] {
+        .modal-body {
+            width: 100%;
+            max-width: 580px;
+            height: 360px;
+            @media screen and (max-width: 480px) {
+                height: 320px;
+            }
+        }
+        form {
+            height: 100%;
+        }
+        .top-block {
+            padding: 46px 20px 20px 20px;
+            height: calc(100%- 51px);
+            text-align: center;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            .btn {
+                margin: 0 10px;
+            }
+        }
+        .title {
+            font-size: 38px;
+            text-align: center;
+            text-transform: uppercase;
+            @media screen and (max-width: 1024px) {
+                font-size: 30px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 26px;
+            }
+        }
+        .modal-language {
+            display: flex;
+            justify-content: space-between;
+            height: 51px;
+            input {
+                display: none;
+            }
+            &__item {
+                font-size: 14px;
+                width: calc(100%/3 - 1px);
+                background: #c7c4d7;
+                color: #2c256b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-weight: 600;
+                transition: 0.2s;
+                &:hover {
+                    background: #847fa8;
+                }
+                &.active {
+                    background: #847fa8;
+                }
+            }
+        }
+    }
+
+    &[data-modal-id="modal-application"] {
+        .modal-body {
+            width: 100%;
+            max-width: 675px;
+            height: 640px;
+            @media screen and (max-width: 1024px) {
+                height: 610px;
+            }
+            @media screen and (max-width: 480px) {
+                height: 560px;
+            }
+        }
+
+        .application-form {
+            width: 100%;
+            padding: 50px 45px 20px 45px;
+            @media screen and (max-width: 1024px) {
+                padding: 40px 35px 20px 35px;
+            }
+            @media screen and (max-width: 480px) {
+                padding: 50px 20px 20px 20px;
+            }
+            input, textarea{
+                margin-bottom: 25px;
+                border-color: #e8e8e8;
+                font-size: 18px;
+                padding: 15px 14px 17px 20px;
+                @media screen and (max-width: 480px) {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+            }
+            textarea {
+                padding: 25px 14px 17px 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .title {
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 55px;
+            @media screen and (max-width: 1024px) {
+                font-size: 30px;
+                margin-bottom: 45px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 26px;
+                margin-bottom: 25px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 22px;
+            }
+        }
+        .file-upload {
+            position: relative;
+            margin: 0px 0 42px 0;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            font-size: 18px;
+            @media screen and (max-width: 480px) {
+                font-size: 16px;
+            }
+            span {
+                text-decoration: underline;
+            }
+            img {
+                width: 20px;
+                margin-right: 11px;
+            }
+            input {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                display: block;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+        .btn  {
+            width: 280px;
+            margin: auto;
+            display: block;
+        }
+    }
+    
+    &.opened {
+        .modal-body {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &-close {
+        position: absolute;
+        right: 17px;
+        top: 15px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+    &-overlay {
+        transition: 0.2s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(47, 39, 114, 0.9);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        &.opened {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.opened {
+        .modal-body {
+            display: block;
+        }
+    }
+
+    &-body {
+        transition: 0.2s;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+
+    .checkbox {
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        input {
+            display: none;
+            &:checked {
+                & + .checkbox__icon {
+                    &:after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        &__icon {
+            border: 1px solid #c4c4c4;
+            padding: 2px;
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+            &:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: block;
+                background: #db272f;
+                transition: 0.1s;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
