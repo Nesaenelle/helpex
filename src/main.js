@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $(".slider-for").on("beforeChange", function (event, slider, slideIndex, nextSlide) {
+        var curSlide = slider.$slides[nextSlide]
+        // changeSliderInfo(curSlide);
+        console.log(curSlide);
+    });
 
     $('.slider-for').slick({
       slidesToShow: 1,

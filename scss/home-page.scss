@@ -3,11 +3,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 0;
+  padding-bottom: 0;
   // height: calc(100% - 44px);
   overflow: hidden;
   min-height: 100%;
 
+  .container {
+    padding: 0 0 70px 0;
+    position: relative;
+  }
 
+  .title {
+    margin-top: 83px;
+  }
 
   .slick-slider-wrapper {
     width: 100%;
@@ -29,36 +37,40 @@
       padding: 0;
     }
     .slider-for {
-      height: calc(100% - 450px);
+      height: calc(100% - 434px);
       .slick-slide {
         outline: none;
         text-align: center;
         &__title {
-          font-size: 42px;
-          color: #02998a;
+          font-size: 32px;
+              color: #02998a;
+              text-transform: uppercase;
+              font-weight: 600;
         }
         &__descr {
-          margin-top: 20px;
+          margin-top: 8px;
           font-size: 16px;
-          line-height: 1.5em;
-          padding: 0 150px;
+          line-height: 1.7em;
+          padding: 0 265px;
         }
         &__link {
           outline: none;
-          margin-top: 10px;
+          margin-top: 19px;
           display: block;
-          font-size: 18px;
+          font-size: 15px;
           text-decoration: underline;
           color: #02998a;
           text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 0.8px;
         }
       }
       .slick-dots {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 42px;
         li {
-          margin: 0 10px;
+          margin: 0 13px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -66,8 +78,8 @@
             &:after {
               content: '';
               position: absolute;
-              width: 9px;
-              height: 9px;
+              width: 10px;
+              height: 10px;
               background: #fff;
               border-radius: 100%;
             }
@@ -77,8 +89,8 @@
             cursor: pointer;
             outline: none;
             border-radius: 100%;
-            width:15px;
-            height: 15px;
+            width:16px;
+            height: 16px;
             font-size: 0;
             border: none;
             background: #02998a;
@@ -87,21 +99,50 @@
       }
     }
     .slider-nav {
-      height: 450px;
+      height: 434px;
       display: flex;
       align-items: center;
+      position: relative;
+      &:before {
+        content: "";
+        border: 14px solid #e8e8e8;
+        border-radius: 100%;
+        width: 68%;
+        height: 48%;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        background-size: cover;
+        z-index: 0;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+      }
       .slick-list {
         height: 100%;
       }
-      .slick-slide {
+      .slick-slide.slick__item{
         transition: 0.7s;
-        transform: translateY(20px) scale(0.8);
+        transform: translateY(-20px) scale(0.8);
         filter: grayscale(100%);
-        opacity: 0.3;
+        // opacity: 0.3;
+        &:after {
+          transform: scale(1.25);
+          bottom: 55px;
+          left: 40px;
+        }
+        &.slick-active {
+
+        }
         &.slick-center  {
-          transform: translateY(75px) scale(1);
+          transform: translateY(35px) scale(1);
           filter: grayscale(0%);
           opacity: 1;
+          &:after {
+            transform: scale(1);
+            bottom: 17px;
+            left: 32px;
+          }
         }
       }
 
@@ -111,7 +152,8 @@
         &__item {
           height: 372px;
           padding: 0px 0;
-
+          z-index: 1;
+          // opacity: 0;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
@@ -121,10 +163,8 @@
           &:after {
             content: "";
             position: absolute;
-            width: 92%;
-            height: 92%;
-            left: 0;
-            bottom: 18px;
+            width: 82%;
+            height: 82%;
             background: url(../img/slide-floor.png) no-repeat;
             background-size: contain;
             transition: .2s;
@@ -172,7 +212,7 @@
       width: 68px;
       height: 68px;
       position: absolute;
-      left: -100px;
+      left: -69px;
       font-size: 0;
       background: #02998a;
       &:after {
@@ -193,7 +233,7 @@
       width: 68px;
       height: 68px;
       position: absolute;
-      right: -100px;
+      right: -69px;
       font-size: 0;
       background: #02998a;
       &:after {
@@ -213,13 +253,23 @@
 
   .text-slider  {
     margin-top: 90px;
-
   }
 
-
+  .disease__letter {
+    position: absolute;
+    font-size: 600px;
+    line-height: 0.58em;
+    color: #f9f9f9;
+    bottom: 0;
+    z-index: -1;
+    font-weight: 800;
+    left: -145px;
+    font-family: circe;
+  }
   .disease__list {
-    margin-top: 70px;
+    margin-top: 61px;
     position: relative;
+    z-index: 1;
     &_item {
       display: flex;
       position: relative;
@@ -229,8 +279,10 @@
           flex-wrap: wrap;
         }
         .disease__list_item--text {
-          right: -30px;
-          margin-top: 30px;
+          right: 3px;
+          margin-top: 34px;
+          padding: 48px 56px 47px 62px;
+          line-height: 1.8em;
            @media screen and (max-width: 768px) { 
             margin: 0;
            }
@@ -243,8 +295,10 @@
           flex-wrap: wrap;
         }
         .disease__list_item--text {
-          left: -30px;
-          margin-top: -30px;
+          left: -1px;
+          margin-top: -38px;
+          padding: 74px 56px 47px 62px;
+          line-height: 1.9;
            @media screen and (max-width: 768px) { 
             margin: 0;
            }
@@ -268,23 +322,24 @@
         display: flex;
         align-items: center;
         border: 5px solid #f3f3f3;
-        padding: 50px;
+
         position: absolute;
-        max-width: 675px;
-        line-height: 1.5em;
+        max-width: 728px;
         height: 100%;
-        top: 0px;
-        @media screen and (max-width: 1280px) {
-          position: static;
-          padding: 40px 30px;
-        }
-        @media screen and (max-width: 768px) { 
-          padding: 20px; 
-          font-size: 14px;
-        }
+        top: 0;
+        background: #fff;
+
+        // @media screen and (max-width: 1280px) {
+        //   position: static;
+        //   padding: 40px 30px;
+        // }
+        // @media screen and (max-width: 768px) { 
+        //   padding: 20px; 
+        //   font-size: 14px;
+        // }
       }
       & + .disease__list_item {
-        margin-top : 80px;
+        margin-top : 108px;
          @media screen and (max-width: 1280px) {
           margin-top: 50px;
          }

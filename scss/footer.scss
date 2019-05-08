@@ -6,51 +6,63 @@ footer {
     @media screen and (max-width: 1024px) {
         // display: none;
     }
+    .navigation {
+        margin-right: -23px;
+        margin-top: -32px;
+        ul {
+            li {
+                margin: 0 3px;
+                &:last-child {
+                    a {
+
+                    }
+                }
+                a {
+                    padding: 7px 20px 9px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
-        // max-width: 1254px;
-        // justify-content: space-between;
         align-content: center;
         height: 100%;
+        padding: 0;
         & > div:first-child {
             width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
         }
-        & > div:last-child {
+        & > div:nth-child(2) {
             display: flex;
             width: 100%;
             justify-content: space-between;
             align-items: center;
+          margin-top: 10px;
+        }
+        & > div:last-child {
+
+
         }
     }
+    .designed {
+        color: #3b3b3b;
+        a {
+            text-decoration: underline;
+        }
+    }
+
     .copyright {
-        color: #a09dbc;
-        font-size: 12px;
-        // &:first-child {
-        //     @media screen and (max-width: 768px) {
-        //         line-height: 1em;
-        //         font-size: 11px;
-        //         text-align: center;
-        //     }
-        //     @media screen and (max-width: 360px) {
-        //         display: none;
-        //     }
-        // }
-        // &:last-child {
-        //     min-width: 66px;
-        //     margin-left: 20px;
-        //     @media screen and (max-width: 768px) {
-        //         display: none;
-        //     }
-        //     @media screen and (max-width: 360px) {
-        //         display: block;
-        //         text-align: center;
-        //         min-width: 100%;
-        //         margin-left: 0px;
-        //     }
-        // }
+        color: #3b3b3b;
+        font-size: 16px;
     }
     .policy {
         text-decoration: underline;
+        color: #3b3b3b;
+        margin-left: -75px;
     }
 }
