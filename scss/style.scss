@@ -189,7 +189,7 @@ main {
 }
 
 [data-animate] {
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards!important;
 }
 
 
@@ -236,33 +236,33 @@ main {
 //     }
 // }
 
-// @keyframes slideinRight {
-//     from {
-//         transform: translateX(100%);
-//         opacity: 0;
-//         visibility: hidden;
-//     }
+@keyframes slideinRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
 
-//     to {
-//         transform: translateY(0);
-//         opacity: 1;
-//         visibility: visible;
-//     }
-// }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
-// @keyframes slideinLeft {
-//     from {
-//         transform: translateX(-100%);
-//         opacity: 0;
-//         visibility: hidden;
-//     }
+@keyframes slideinLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
 
-//     to {
-//         transform: translateY(0);
-//         opacity: 1;
-//         visibility: visible;
-//     }
-// }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 // @keyframes slideinDiagonal {
 //     from {

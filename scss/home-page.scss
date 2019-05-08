@@ -278,6 +278,12 @@
           padding: 0;
           flex-wrap: wrap;
         }
+         .disease__list_item--img {
+          transform: translateX(-150%);
+            &[data-animate="true"] {
+              animation: slideinLeft 1.5s;
+            }
+         }
         .disease__list_item--text {
           right: 3px;
           margin-top: 34px;
@@ -312,6 +318,14 @@
           padding: 0;
           flex-wrap: wrap;
         }
+
+        .disease__list_item--img {
+            transform: translateX(150%);
+           &[data-animate="true"] {
+             animation: slideinRight 1.5s;
+           }
+        }
+
         .disease__list_item--text {
           left: -1px;
           margin-top: -38px;
@@ -350,6 +364,8 @@
       &--img {
         max-width: 693px;
         // min-width: 693px;
+        position: relative;
+        z-index: 2;
         @media screen and (max-width: 1280px) {
           margin: auto;
         }

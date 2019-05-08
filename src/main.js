@@ -56,6 +56,7 @@ $(document).ready(function () {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
+        autoplay: true,
         responsive: [
             // {
             //     breakpoint: 1600,
