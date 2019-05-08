@@ -9,6 +9,7 @@
 @import "about-page.scss";
 @import "products-page.scss";
 @import "contacts-page.scss";
+@import "themes.scss";
 
 
 body {
@@ -64,14 +65,27 @@ main {
     position: relative;
     margin-top: 40px;
 
+    &[data-animate="true"] {
+        b {
+            animation: scaleIn 1.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+
     // font-family: 'RALEWAY';
+    b {
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+    }
     span {
         height: 3px;
         width: 90px;
-        background: #02998a;
+        background: $c-turquoise;
         position: relative;
         margin: 20px auto 0;
         display: block;
+       
 
         &:after,
         &:before {
@@ -96,7 +110,7 @@ main {
 
         &:before {
             border-color: rgba(194, 225, 245, 0);
-            border-top-color: #02998a;
+            border-top-color: $c-turquoise;
             border-width: 16px;
         }
     }
@@ -122,7 +136,7 @@ main {
         right: 120px;
         bottom: 13px;
         font-size: 190px;
-        color: #02998a;
+        color: $c-turquoise;
         line-height: 0.8em;
         height: 50px;
         transform-origin: bottom;
@@ -155,7 +169,7 @@ main {
 
             &.slick-active {
                 button {
-                    background: #02998a;
+                    background: $c-turquoise;
                 }
             }
 
@@ -178,72 +192,88 @@ main {
     animation-fill-mode: forwards;
 }
 
-@keyframes slideinDown {
+
+@keyframes scaleIn {
     from {
-        transform: translateY(-100%);
+        transform: scale(0.6) translateY(60px);
         opacity: 0;
         visibility: hidden;
     }
 
     to {
-        transform: translateY(0);
+        transform: scale(1) translateY(0px);
         opacity: 1;
         visibility: visible;
     }
 }
 
-@keyframes slideinUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-        visibility: hidden;
-    }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-}
+// @keyframes slideinDown {
+//     from {
+//         transform: translateY(-100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
 
-@keyframes slideinRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-        visibility: hidden;
-    }
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-}
+// @keyframes slideinUp {
+//     from {
+//         transform: translateY(100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
 
-@keyframes slideinLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-        visibility: hidden;
-    }
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-}
+// @keyframes slideinRight {
+//     from {
+//         transform: translateX(100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
 
-@keyframes slideinDiagonal {
-    from {
-        transform: translate(-200%, -200%);
-        opacity: 0;
-        visibility: hidden;
-    }
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
 
-    to {
-        transform: translate(0, 0);
-        opacity: 1;
-        visibility: visible;
-    }
-}
+// @keyframes slideinLeft {
+//     from {
+//         transform: translateX(-100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
+
+// @keyframes slideinDiagonal {
+//     from {
+//         transform: translate(-200%, -200%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+
+//     to {
+//         transform: translate(0, 0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }

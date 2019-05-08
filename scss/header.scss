@@ -115,7 +115,7 @@ header {
 
                 &:hover,
                 &.active {
-                    background: #02998a;
+                    background: $c-turquoise;
                     color: #fff;
                 }
             }
@@ -152,11 +152,11 @@ header {
         span {
             // background: none;
             width: 35px;
-            background: #02998a;
+            background: $c-turquoise;
 
             &:before {
                 width: 25px;
-                background: #02998a;
+                background: $c-turquoise;
                 // top: 0px;
                 // -webkit-transform: rotate(45deg);
                 // -ms-transform: rotate(45deg);
@@ -165,7 +165,7 @@ header {
             }
 
             &:after {
-                background: #02998a;
+                background: $c-turquoise;
                 width: 45px;
                 // top: 0px;
                 // -webkit-transform: rotate(-45deg);

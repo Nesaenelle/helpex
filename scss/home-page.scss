@@ -43,7 +43,7 @@
         text-align: center;
         &__title {
           font-size: 32px;
-              color: #02998a;
+              color: $c-turquoise;
               text-transform: uppercase;
               font-weight: 600;
         }
@@ -59,7 +59,7 @@
           display: block;
           font-size: 15px;
           text-decoration: underline;
-          color: #02998a;
+          color: $c-turquoise;
           text-transform: uppercase;
           font-weight: 800;
           letter-spacing: 0.8px;
@@ -93,7 +93,7 @@
             height: 16px;
             font-size: 0;
             border: none;
-            background: #02998a;
+            background: $c-turquoise;
           }
         }
       }
@@ -214,7 +214,7 @@
       position: absolute;
       left: -69px;
       font-size: 0;
-      background: #02998a;
+      background: $c-turquoise;
       &:after {
         content: "";
         display: block;
@@ -235,7 +235,7 @@
       position: absolute;
       right: -69px;
       font-size: 0;
-      background: #02998a;
+      background: $c-turquoise;
       &:after {
         content: "";
         display: block;
@@ -287,6 +287,24 @@
             margin: 0;
            }
         }
+        .disease__list_item--line {
+          &.first {
+            top: -5px;
+            right: -5px;
+            border-right: 5px solid #02998a;
+            border-top: 5px solid #02998a;
+            width: 266px;
+            height: 71px;
+          }
+          &.last {
+            bottom: -5px;
+            right: -5px;
+            border-right: 5px solid #02998a;
+            border-bottom: 5px solid #02998a;
+            width: 55px;
+            height: 47px;
+          }
+        }
       }
       &:nth-child(even) {
         justify-content: flex-end;
@@ -303,6 +321,24 @@
             margin: 0;
            }
         }
+        .disease__list_item--line {
+          &.first {
+            top: -5px;
+            left: -5px;
+            border-left: 5px solid #02998a;
+            border-top: 5px solid #02998a;
+            width: 266px;
+            height: 71px;
+          }
+          &.last {
+            bottom: -5px;
+            left: -5px;
+            border-left: 5px solid #02998a;
+            border-bottom: 5px solid #02998a;
+            width: 55px;
+            height: 47px;
+          }
+        }
       }
       img {
         position: relative;
@@ -318,6 +354,9 @@
           margin: auto;
         }
       }
+      &--line {
+        position: absolute;
+      }
       &--text {
         display: flex;
         align-items: center;
@@ -327,7 +366,7 @@
         max-width: 728px;
         height: 100%;
         top: 0;
-        background: #fff;
+        // background: #fff;
 
         // @media screen and (max-width: 1280px) {
         //   position: static;
