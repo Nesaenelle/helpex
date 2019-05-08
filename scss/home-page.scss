@@ -95,11 +95,11 @@
       }
       .slick-slide {
         transition: 0.7s;
-        transform: translateY(20px);
+        transform: translateY(20px) scale(0.8);
         filter: grayscale(100%);
         opacity: 0.3;
         &.slick-center  {
-          transform: translateY(75px);
+          transform: translateY(75px) scale(1);
           filter: grayscale(0%);
           opacity: 1;
         }
@@ -121,10 +121,10 @@
           &:after {
             content: "";
             position: absolute;
-            width: 95%;
-            height: 95%;
+            width: 92%;
+            height: 92%;
             left: 0;
-            bottom: 20px;
+            bottom: 18px;
             background: url(../img/slide-floor.png) no-repeat;
             background-size: contain;
             transition: .2s;
