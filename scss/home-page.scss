@@ -1,404 +1,457 @@
 .home-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 0;
-  padding-bottom: 0;
-  // height: calc(100% - 44px);
-  overflow: hidden;
-  min-height: 100%;
 
-  .container {
-    padding: 0 0 70px 0;
-    position: relative;
-  }
-
-  .title {
-    margin-top: 83px;
-  }
-
-  .slick-slider-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    // height: 200px;
-
-    padding: 120px 40px 20px 40px;
-    background: url(../img/slider-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    // @media screen and (max-width: 480px) {
-    //   padding: 25px 40px 15px 40px;
-    // }
-    // @media screen and (max-height: 640px) {
-    //   padding: 15px 40px 0px 40px;
-    // }
-    .container {
-      height: 100%;
-      padding: 0;
+    header {
+        background: none;
+        &:after, &:before {
+            content: none;
+        }
     }
-    .slider-for {
-      height: calc(100% - 434px);
-      .slick-slide {
-        outline: none;
-        text-align: center;
-        &__title {
-          font-size: 32px;
-              color: $c-turquoise;
-              text-transform: uppercase;
-              font-weight: 600;
-        }
-        &__descr {
-          margin-top: 8px;
-          font-size: 16px;
-          line-height: 1.7em;
-          padding: 0 265px;
-        }
-        &__link {
-          outline: none;
-          margin-top: 19px;
-          display: block;
-          font-size: 15px;
-          text-decoration: underline;
-          color: $c-turquoise;
-          text-transform: uppercase;
-          font-weight: 800;
-          letter-spacing: 0.8px;
-        }
-      }
-      .slick-dots {
+
+    main {
+        min-height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
         display: flex;
-        justify-content: center;
-        margin-top: 42px;
-        li {
-          margin: 0 13px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          &.slick-active {
-            &:after {
-              content: '';
-              position: absolute;
-              width: 10px;
-              height: 10px;
-              background: #fff;
-              border-radius: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .container {
+            padding: 0 0 70px 0;
+            position: relative;
+        }
+
+        .title {
+            margin-top: 83px;
+        }
+
+        .slick-slider-wrapper {
+            width: 100%;
+            min-height: 100vh;
+            // height: 200px;
+
+            padding: 120px 40px 20px 40px;
+            background: url(../img/slider-bg.jpg);
+            background-size: cover;
+            background-position: center;
+
+            // @media screen and (max-width: 480px) {
+            //   padding: 25px 40px 15px 40px;
+            // }
+            // @media screen and (max-height: 640px) {
+            //   padding: 15px 40px 0px 40px;
+            // }
+            .container {
+                height: 100%;
+                padding: 0;
             }
-          }
-        
-          button {
-            cursor: pointer;
-            outline: none;
-            border-radius: 100%;
-            width:16px;
-            height: 16px;
-            font-size: 0;
-            border: none;
-            background: $c-turquoise;
-          }
-        }
-      }
-    }
-    .slider-nav {
-      height: 434px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      &:before {
-        content: "";
-        border: 14px solid #e8e8e8;
-        border-radius: 100%;
-        width: 68%;
-        height: 48%;
-        position: absolute;
-        left: 0;
-        top: -20px;
-        background-size: cover;
-        z-index: 0;
-        margin: auto;
-        right: 0;
-        bottom: 0;
-      }
-      .slick-list {
-        height: 100%;
-      }
-      .slick-slide.slick__item{
-        transition: 0.7s;
-        transform: translateY(-20px) scale(0.8);
-        filter: grayscale(100%);
-        // opacity: 0.3;
-        &:after {
-          transform: scale(1.25);
-          bottom: 55px;
-          left: 40px;
-        }
-        &.slick-active {
 
-        }
-        &.slick-center  {
-          transform: translateY(35px) scale(1);
-          filter: grayscale(0%);
-          opacity: 1;
-          &:after {
-            transform: scale(1);
-            bottom: 17px;
-            left: 32px;
-          }
-        }
-      }
+            .slider-for {
+                height: calc(100% - 434px);
 
-      .slick {
-        // width: 100%;
-        
-        &__item {
-          height: 372px;
-          padding: 0px 0;
-          z-index: 1;
-          // opacity: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          margin: 0px 10px;
-          outline: none;
-          position: relative;
-          &:after {
-            content: "";
+                .slick-slide {
+                    outline: none;
+                    text-align: center;
+
+                    &__title {
+                        font-size: 32px;
+                        color: $c-turquoise;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+
+                    &__descr {
+                        margin-top: 8px;
+                        font-size: 16px;
+                        line-height: 1.7em;
+                        padding: 0 265px;
+                    }
+
+                    &__link {
+                        outline: none;
+                        margin-top: 19px;
+                        display: block;
+                        font-size: 15px;
+                        text-decoration: underline;
+                        color: $c-turquoise;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        letter-spacing: 0.8px;
+                    }
+                }
+
+                .slick-dots {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 42px;
+
+                    li {
+                        margin: 0 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &.slick-active {
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                background: #fff;
+                                border-radius: 100%;
+                            }
+                        }
+
+                        button {
+                            cursor: pointer;
+                            outline: none;
+                            border-radius: 100%;
+                            width: 16px;
+                            height: 16px;
+                            font-size: 0;
+                            border: none;
+                            background: $c-turquoise;
+                        }
+                    }
+                }
+            }
+
+            .slider-nav {
+                height: 434px;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    border: 14px solid #e8e8e8;
+                    border-radius: 100%;
+                    width: 68%;
+                    height: 48%;
+                    position: absolute;
+                    left: 0;
+                    top: -20px;
+                    background-size: cover;
+                    z-index: 0;
+                    margin: auto;
+                    right: 0;
+                    bottom: 0;
+                }
+
+                .slick-list {
+                    height: 100%;
+                }
+
+                .slick-slide.slick__item {
+                    transition: 0.7s;
+                    transform: translateY(-20px) scale(0.8);
+                    filter: grayscale(100%);
+
+                    // opacity: 0.3;
+                    &:after {
+                        transform: scale(1.25);
+                        bottom: 55px;
+                        left: 40px;
+                    }
+
+                    &.slick-active {}
+
+                    &.slick-center {
+                        transform: translateY(35px) scale(1);
+                        filter: grayscale(0%);
+                        opacity: 1;
+
+                        &:after {
+                            transform: scale(1);
+                            bottom: 17px;
+                            left: 32px;
+                        }
+                    }
+                }
+
+                .slick {
+                    // width: 100%;
+
+                    &__item {
+                        height: 372px;
+                        padding: 0px 0;
+                        z-index: 1;
+                        // opacity: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin: 0px 10px;
+                        outline: none;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            width: 82%;
+                            height: 82%;
+                            background: url(../img/slide-floor.png) no-repeat;
+                            background-size: contain;
+                            transition: .2s;
+                            z-index: -1;
+                            background-position: center bottom;
+                        }
+
+                        &--img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            transition: 0.2s;
+                        }
+
+                        &--text {
+                            font-size: 14px;
+                            color: #373737;
+                            text-align: center;
+                            margin-top: 8px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .slick-prev,
+            .slick-next {
+                border: none;
+                top: 0;
+                bottom: 0;
+                cursor: pointer;
+                outline: none;
+                transition: 0.1s;
+                bottom: 34px;
+                top: 0;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .slick-prev.slick-arrow {
+                width: 68px;
+                height: 68px;
+                position: absolute;
+                left: -69px;
+                font-size: 0;
+                background: $c-turquoise;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border: solid #fff;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 7px;
+                    margin-left: 5px;
+
+                    transform: rotate(135deg);
+                    -webkit-transform: rotate(135deg);
+                }
+            }
+
+            .slick-next.slick-arrow {
+                width: 68px;
+                height: 68px;
+                position: absolute;
+                right: -69px;
+                font-size: 0;
+                background: $c-turquoise;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border: solid #fff;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 7px;
+                    margin-left: -5px;
+
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+            }
+        }
+
+        .text-slider {
+            margin-top: 90px;
+        }
+
+        .disease__letter {
             position: absolute;
-            width: 82%;
-            height: 82%;
-            background: url(../img/slide-floor.png) no-repeat;
-            background-size: contain;
-            transition: .2s;
+            font-size: 600px;
+            line-height: 0.58em;
+            color: #f9f9f9;
+            bottom: 0;
             z-index: -1;
-            background-position: center bottom;
-          }
-
-          &--img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transition: 0.2s; 
-          }
-          &--text {
-            font-size: 14px;
-            color: #373737;
-            text-align: center;
-            margin-top: 8px;
-            width: 100%;
-          }
+            font-weight: 800;
+            left: -145px;
+            font-family: circe;
         }
-      }
-    }
-    .slick-prev,
-    .slick-next {
-      border: none;
-      top: 0;
-      bottom: 0;
-      cursor: pointer;
-      outline: none;
-      transition: 0.1s;
-      bottom: 34px;
-      top: 0;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
 
-    .slick-prev.slick-arrow {
-      width: 68px;
-      height: 68px;
-      position: absolute;
-      left: -69px;
-      font-size: 0;
-      background: $c-turquoise;
-      &:after {
-        content: "";
-        display: block;
-        border: solid #fff;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 7px;
-        margin-left: 5px;
+        .disease__list {
+            margin-top: 61px;
+            position: relative;
+            z-index: 1;
 
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
-    }
+            &_item {
+                display: flex;
+                position: relative;
 
-    .slick-next.slick-arrow {
-      width: 68px;
-      height: 68px;
-      position: absolute;
-      right: -69px;
-      font-size: 0;
-      background: $c-turquoise;
-      &:after {
-        content: "";
-        display: block;
-        border: solid #fff;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 7px;
-        margin-left: -5px;
+                &:nth-child(odd) {
+                    @media screen and (max-width: 1280px) {
+                        padding: 0;
+                        flex-wrap: wrap;
+                    }
 
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-    }
-  }
+                    .disease__list_item--img {
+                        transform: translateX(-150%);
 
-  .text-slider  {
-    margin-top: 90px;
-  }
+                        &[data-animate="true"] {
+                            animation: slideinLeft 1.5s;
+                        }
+                    }
 
-  .disease__letter {
-    position: absolute;
-    font-size: 600px;
-    line-height: 0.58em;
-    color: #f9f9f9;
-    bottom: 0;
-    z-index: -1;
-    font-weight: 800;
-    left: -145px;
-    font-family: circe;
-  }
-  .disease__list {
-    margin-top: 61px;
-    position: relative;
-    z-index: 1;
-    &_item {
-      display: flex;
-      position: relative;
-      &:nth-child(odd) {
-        @media screen and (max-width: 1280px) {
-          padding: 0;
-          flex-wrap: wrap;
-        }
-         .disease__list_item--img {
-          transform: translateX(-150%);
-            &[data-animate="true"] {
-              animation: slideinLeft 1.5s;
+                    .disease__list_item--text {
+                        right: 3px;
+                        margin-top: 34px;
+                        padding: 48px 56px 47px 62px;
+                        line-height: 1.8em;
+
+                        @media screen and (max-width: 768px) {
+                            margin: 0;
+                        }
+                    }
+
+                    .disease__list_item--line {
+                        &.first {
+                            top: -5px;
+                            right: -5px;
+                            border-right: 5px solid $c-turquoise;
+                            border-top: 5px solid $c-turquoise;
+                            width: 266px;
+                            height: 71px;
+                        }
+
+                        &.last {
+                            bottom: -5px;
+                            right: -5px;
+                            border-right: 5px solid $c-turquoise;
+                            border-bottom: 5px solid $c-turquoise;
+                            width: 55px;
+                            height: 47px;
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+                    justify-content: flex-end;
+
+                    @media screen and (max-width: 1280px) {
+                        padding: 0;
+                        flex-wrap: wrap;
+                    }
+
+                    .disease__list_item--img {
+                        transform: translateX(150%);
+
+                        &[data-animate="true"] {
+                            animation: slideinRight 1.5s;
+                        }
+                    }
+
+                    .disease__list_item--text {
+                        left: -1px;
+                        margin-top: -38px;
+                        padding: 74px 56px 47px 62px;
+                        line-height: 1.9;
+
+                        @media screen and (max-width: 768px) {
+                            margin: 0;
+                        }
+                    }
+
+                    .disease__list_item--line {
+                        &.first {
+                            top: -5px;
+                            left: -5px;
+                            border-left: 5px solid $c-turquoise;
+                            border-top: 5px solid $c-turquoise;
+                            width: 266px;
+                            height: 71px;
+                        }
+
+                        &.last {
+                            bottom: -5px;
+                            left: -5px;
+                            border-left: 5px solid $c-turquoise;
+                            border-bottom: 5px solid $c-turquoise;
+                            width: 55px;
+                            height: 47px;
+                        }
+                    }
+                }
+
+                img {
+                    position: relative;
+                    z-index: 1;
+                    // max-width: 693px;
+                    width: 100%;
+                    display: block;
+                }
+
+                &--img {
+                    max-width: 693px;
+                    // min-width: 693px;
+                    position: relative;
+                    z-index: 2;
+
+                    @media screen and (max-width: 1280px) {
+                        margin: auto;
+                    }
+                }
+
+                &--line {
+                    position: absolute;
+                }
+
+                &--text {
+                    display: flex;
+                    align-items: center;
+                    border: 5px solid #f3f3f3;
+
+                    position: absolute;
+                    max-width: 728px;
+                    height: 100%;
+                    top: 0;
+                    // background: #fff;
+
+                    // @media screen and (max-width: 1280px) {
+                    //   position: static;
+                    //   padding: 40px 30px;
+                    // }
+                    // @media screen and (max-width: 768px) { 
+                    //   padding: 20px; 
+                    //   font-size: 14px;
+                    // }
+                }
+
+                &+.disease__list_item {
+                    margin-top: 108px;
+
+                    @media screen and (max-width: 1280px) {
+                        margin-top: 50px;
+                    }
+                }
             }
-         }
-        .disease__list_item--text {
-          right: 3px;
-          margin-top: 34px;
-          padding: 48px 56px 47px 62px;
-          line-height: 1.8em;
-           @media screen and (max-width: 768px) { 
-            margin: 0;
-           }
-        }
-        .disease__list_item--line {
-          &.first {
-            top: -5px;
-            right: -5px;
-            border-right: 5px solid #02998a;
-            border-top: 5px solid #02998a;
-            width: 266px;
-            height: 71px;
-          }
-          &.last {
-            bottom: -5px;
-            right: -5px;
-            border-right: 5px solid #02998a;
-            border-bottom: 5px solid #02998a;
-            width: 55px;
-            height: 47px;
-          }
-        }
-      }
-      &:nth-child(even) {
-        justify-content: flex-end;
-        @media screen and (max-width: 1280px) {
-          padding: 0;
-          flex-wrap: wrap;
         }
 
-        .disease__list_item--img {
-            transform: translateX(150%);
-           &[data-animate="true"] {
-             animation: slideinRight 1.5s;
-           }
-        }
-
-        .disease__list_item--text {
-          left: -1px;
-          margin-top: -38px;
-          padding: 74px 56px 47px 62px;
-          line-height: 1.9;
-           @media screen and (max-width: 768px) { 
-            margin: 0;
-           }
-        }
-        .disease__list_item--line {
-          &.first {
-            top: -5px;
-            left: -5px;
-            border-left: 5px solid #02998a;
-            border-top: 5px solid #02998a;
-            width: 266px;
-            height: 71px;
-          }
-          &.last {
-            bottom: -5px;
-            left: -5px;
-            border-left: 5px solid #02998a;
-            border-bottom: 5px solid #02998a;
-            width: 55px;
-            height: 47px;
-          }
-        }
-      }
-      img {
-        position: relative;
-        z-index: 1;
-        // max-width: 693px;
-        width: 100%;
-        display: block;
-      }
-      &--img {
-        max-width: 693px;
-        // min-width: 693px;
-        position: relative;
-        z-index: 2;
-        @media screen and (max-width: 1280px) {
-          margin: auto;
-        }
-      }
-      &--line {
-        position: absolute;
-      }
-      &--text {
-        display: flex;
-        align-items: center;
-        border: 5px solid #f3f3f3;
-
-        position: absolute;
-        max-width: 728px;
-        height: 100%;
-        top: 0;
-        // background: #fff;
-
-        // @media screen and (max-width: 1280px) {
-        //   position: static;
-        //   padding: 40px 30px;
-        // }
-        // @media screen and (max-width: 768px) { 
-        //   padding: 20px; 
-        //   font-size: 14px;
-        // }
-      }
-      & + .disease__list_item {
-        margin-top : 108px;
-         @media screen and (max-width: 1280px) {
-          margin-top: 50px;
-         }
-      }
     }
-  }
+
 }

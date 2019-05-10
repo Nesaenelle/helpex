@@ -6,9 +6,34 @@ header {
     // background: #ccc;
     height: 100px;
     width: 100%;
+    background: #fff;
+
+    &:before {
+      content: "";
+      width: 100%;
+      // top: 113px;
+      bottom: 5px;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+      background: #fff;
+      height: 10px;
+    }    
+    &:after {
+      content: "";
+      width: 100%;
+      // top: 113px;
+      bottom: 0px;
+      left: 0;
+      position: absolute;
+      z-index: -1;
+      height: 10px;
+      box-shadow: 0 0 7px -3px #666;
+    }
 
     .container {
         position: relative;
+        z-index: 1;
         height: 100%;
         display: flex;
         justify-content: space-between;
