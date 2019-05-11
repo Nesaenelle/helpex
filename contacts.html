@@ -43,18 +43,28 @@
             <h2 class="title" data-animate><b>Контакты</b><span></span></h2>
             <div class="map" id="map"></div>
 
-            <div class="contact-form__title">Задать вопрос</div>
+        
             <form class="contact-form">
-                <div>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш E-mail">
+                <div class="contact-form__title">Задать вопрос</div>
+                <div class="contact-form__inputs">
+                    <div class="input">
+                        <img src="img/man-user.svg" alt="">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    
+                    <div class="input">
+                        <img src="img/email.svg" alt="">
+                        <input type="email" placeholder="Ваш E-mail" required>
+                    </div>
                     <button type="submit" class="btn btn-contact">Отправить нам</button>
                 </div>
-                <div>
-                    <textarea placeholder="Комментарий" ></textarea>
+                <div class="textarea">
+                    <img src="img/conversation.svg" alt="">
+                    <textarea placeholder="Комментарий" required></textarea>
                 </div>
             </form>
             <button class="btn btn-supplier">Компания-поставщик</button>
+            <img src="img/phone-book.svg" alt="" class="mark">
         </div>
     </main>
     <footer>
@@ -110,11 +120,7 @@
         </div>
     </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="src/3dcarousel.js"></script>
-    <!-- <script src="src/main.js"></script> -->
-    <!--         <script src="src/modal.js"></script>
-    <script src="src/dropdown.js"></script> -->
+    
     <script src="src/menu.js"></script>
     <script src="src/animate.js"></script>
 

@@ -1,16 +1,13 @@
 (function($) {
     
-  var allPanels = $('.accordion__header');//.hide();
+  var allPanels = $('.accordion__header');
     
-  // $('.accordion > dt > a').click(function() {
-  //   allPanels.slideUp();
-  //   $(this).parent().next().slideDown();
-  //   return false;
-  // });
+
   allPanels.first().addClass('active').next().slideToggle();
-  // allPanels.first()
+
   allPanels.on('click', function() {
-  	allPanels.removeClass('active');
+  	allPanels.not($(this)).removeClass('active');
+    allPanels.not($(this)).next().slideUp();
   	$(this).next().stop().slideToggle();
   	$(this).toggleClass('active');
   });

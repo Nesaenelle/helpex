@@ -34,16 +34,14 @@
 
     &-contact {
         border: none;
-        // box-shadow: 0 0 1px 0 #2c256b;
         color: #fff;
         padding: 20px 42px 21px 42px;
         background: $c-turquoise;
-        text-transform: uppercase;
-        font-size: 15px;
+        font-size: 18px;
         display: flex;
         font-weight: 600;
         width: 100%;
-        letter-spacing: .6px;
+        letter-spacing: 1px;
         color: #fff;
         position: relative;
         border-radius: 30px;
@@ -53,33 +51,58 @@
 
         &:hover {
             color: $c-turquoise;
-            // border: 1px solid $c-turquoise;
             background: none;
         }
     }
 
     &-supplier {
         border: none;
-        // box-shadow: 0 0 1px 0 #2c256b;
         color: #fff;
-        padding: 20px 42px 21px 42px;
+        padding: 19px 32px 21px 32px;
         background: none;
-        text-transform: uppercase;
-        font-size: 15px;
+        // text-transform: uppercase;
+        font-size: 20px;
         display: flex;
-        font-weight: 600;
+        font-weight: 400;
         // width: 100%;
-        letter-spacing: .6px;
+        letter-spacing: 0px;
         color: $c-turquoise;
         position: relative;
-        border-radius: 30px;
+        border-radius: 50px;
         text-align: center;
-        border: 1px solid $c-turquoise;
+        border: 2px solid $c-turquoise;
         justify-content: center;
 
         &:hover {
             color: #fff;
             background: $c-turquoise;
+        }
+    }
+
+    &-buy {
+        border: none;
+        text-transform: uppercase;
+        padding: 19px 36px 21px 32px;
+        background: $c-turquoise;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: relative;
+        text-align: left;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 30px;
+            margin: auto;
+            width: 42px;
+            height: 34px;
+            background: url(../img/left-arrow.svg) no-repeat;
+            background-size: contain;
+            transform: rotate(180deg);
         }
     }
 }

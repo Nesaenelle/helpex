@@ -7,19 +7,19 @@ footer {
         // display: none;
     }
     .navigation {
-        margin-right: -23px;
+        // margin-right: -23px;
         margin-top: -32px;
         ul {
             li {
-                margin: 0 3px;
+                margin: 0 0px;
                 &:last-child {
                     a {
 
                     }
                 }
                 a {
-                    padding: 7px 20px 9px;
-                    font-size: 18px;
+                    padding: 7px 21px 9px 21px;
+                    font-size: 16px;
                 }
             }
         }
@@ -29,7 +29,7 @@ footer {
         flex-wrap: wrap;
         align-content: center;
         height: 100%;
-        padding: 0;
+        // padding: 0;
         & > div:first-child {
             width: 100%;
             display: flex;

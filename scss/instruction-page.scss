@@ -1,0 +1,273 @@
+.instruction-page {
+    main {
+    	padding-bottom: 61px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumbs {
+            margin-bottom: 52px;
+        }
+
+
+        .sidebar {
+            &__item {
+                padding: 15px 23px;
+                font-weight: 500;
+                border: 2px solid #f3f3f3;
+                border-top: 0;
+                cursor: pointer;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border: solid $c-turquoise;
+                    border-width: 0 1px 1px 0;
+                    display: inline-block;
+                    padding: 5px;
+                    margin-left: 5px;
+                    position: absolute;
+                    right: 26px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+
+                &.active {
+                    border-color: $c-turquoise;
+                    background: $c-turquoise;
+                    color: #fff;
+
+                    &:after {
+                        border: solid #fff;
+                        border-width: 0 1px 1px 0;
+                    }
+                }
+            }
+        }
+
+        .left-side {
+            width: 332px;
+        }
+
+        .right-side {
+            width: calc(100% - 332px - 20px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        .header {
+        	font-weight: 600;
+        	font-size: 22px;
+        	position: relative;
+        	padding-left: 20px;
+        	width: 100%;
+        	letter-spacing: 1.3px;
+
+            &:after {
+                content: '';
+                left: 0;
+                width: 5px;
+                position: absolute;
+                height: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $c-turquoise;
+            }
+        }
+
+        .images {
+            padding: 20px;
+            border: 1px solid #e8e8e8;
+            width: 420px;
+            height: 305px;
+            display: flex;
+            align-items: center;
+            img {
+            	display: block;
+            	margin: 21px auto 0;
+            }
+        }
+
+        .top-text {
+            width: calc(100% - 420px - 20px);
+
+            .header {
+                margin-top: -3px;
+            }
+
+            p {
+                margin-top: 25px;
+                padding-left: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.7em;
+            }
+
+            a {
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 45px;
+                display: block;
+                margin-left: 14px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                    margin-right: 17px;
+                    display: block;
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            b {
+                width: 100%;
+                font-size: 14px;
+                display: block;
+                margin-top: 25px;
+                margin-left: 20px;
+
+                &~b {
+                    margin-top: 22px;
+                }
+
+                &+p {
+                    margin-top: 5px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.75em;
+                margin-left: 20px;
+            }
+
+            .header {
+                margin-top: 41px;
+                // & ~ .header {
+                // 	margin-top: 45px;
+                // }
+                position: relative;
+                &:before {
+                	position: absolute;
+                	content: '';
+                	height: 1px;
+                	top: 4px;
+                	bottom: 0;
+                	margin: auto;
+                	background: #e2e5ed;
+                	width: 100%;
+                }
+
+                span {
+                	position: relative;
+                	padding-right: 20px;
+                	background: #fff;
+                }
+            }
+
+            &+.content {
+                .header {
+                    margin-top: 28px;
+                }
+            }
+
+            .testimony {
+                width: 56%;
+
+                span {
+                	margin-top: 7px;
+                	display: inline-block;
+                	padding-left: 19px;
+
+                	& ~ span {
+                		font-size: 14px;
+                		margin: 10px 0px 2px 0;
+                	}
+                }
+
+                b {
+                    color: $c-turquoise;
+                    font-size: 18px;
+                    margin-top: 16px;
+                }
+
+                ul {
+                	li {
+                		padding-left: 20px;
+                		font-size: 14px;
+                		padding: 11px 0 0 55px;
+                		position: relative;
+                		&:after {
+                			content: "";
+                			background: url(../img/plus-green.png) no-repeat;
+                			width: 20px;
+                			height: 16px;
+                			position: absolute;
+                			left: 27px;
+                			top: 13px;
+                			bottom: 0;
+                		}
+                	}
+                }
+            }
+
+            .contraindications {
+                width: 44%;
+
+                b {
+                    color: #fa303c;
+                    font-size: 18px;
+                    margin-top: 16px;
+                }
+
+                ul {
+                	li {
+                		font-size: 14px;
+                		padding: 6px 0 0 0;
+                		text-indent: 55px;
+                		line-height: 1.95em;
+                		position: relative;
+                		&:after {
+                			content: '';
+                			background: url(../img/minus-red.png) no-repeat;
+                			width: 20px;
+                			height: 16px;
+                			position: absolute;
+                			left: 33px;
+                			top: 17px;
+                			bottom: 0;
+                		}
+                	}
+                }
+            }
+
+            &.storage-conditions {
+            	p {
+            		line-height: 2em;
+            		margin-top: 4px;
+            	}
+            }
+        }
+    }
+}
