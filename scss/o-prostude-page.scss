@@ -10,13 +10,13 @@
         .top-block {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 64px;
+            margin-top: 58px;
             align-items: flex-start;
 
             img {
                 margin-right: 20px;
                 // float: left;
-                width: calc(55% - 20px);
+                width: calc(50% - 11px);
             }
 
             &>div {
@@ -30,32 +30,99 @@
                 font-size: 14px;
 
                 &+p {
-                    margin-top: 30px;
+                    margin-top: 22px;
                 }
             }
         }
 
 
         .text-block {
-            width: 100%;
-            border: 7px solid #f3f3f3;
-            padding: 30px 30px;
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            font-style: italic;
-            line-height: 2em;
-            color: #555555;
-
+        	width: 100%;
+        	border: 10px solid #f3f3f3;
+        	padding: 36px 18px 36px 39px;
+        	margin-top: 43px;
+        	display: flex;
+        	align-items: center;
+        	font-style: italic;
+        	line-height: 2em;
+        	color: #555;
+        	letter-spacing: 1.1px;
+            & + .title {
+            	margin-top: 63px;
+            }
             img {
-                width: 80px;
-                margin-right: 20px;
+                width: 86px;
+                margin-right: 45px;
+            }
+        }
+
+        .symptoms {
+            position: relative;
+            height: 784px;
+			margin-top: 60px;
+
+
+            &__item {
+            	position: absolute;
+            	width: 340px;
+            	display: flex;
+            	line-height: 1.7em;
+				
+
+                .hexagon {
+                	// position: absolute;
+                	// width: 340px;
+                	// display: flex;
+                	// line-height: 1.7em;
+                	display: none;
+                }
+
+                &:nth-child(1) {
+                    right: 96px;
+                    top: 5px;
+
+                    .hexagon {}
+                }
+
+                &:nth-child(2) {
+                	top: 78px;
+                	right: 703px;
+
+
+                    .hexagon {}
+                }
+
+                &:nth-child(3) {
+                	top: 234px;
+                	right: 236px;
+
+                    .hexagon {}
+                }
+
+                &:nth-child(4) {
+                	top: 345px;
+                	right: 951px;
+
+                    .hexagon {}
+                }
+                &:nth-child(5) {
+                	top: 452px;
+                	right: 283px;
+
+                    .hexagon {}
+                }
+                &:nth-child(6) {
+                	top: 598px;
+                	    right: 815px;
+
+                    .hexagon {}
+                }
             }
         }
 
         .notises-slider {
             width: 100%;
-            margin-top: 60px;
+            margin-top: 42px;
             margin-bottom: 60px;
             border-bottom: 1px solid #d4d4d4;
             padding-bottom: 70px;
@@ -66,16 +133,18 @@
             }
 
             .notice-item {
-            	display: flex;
+                display: flex;
                 width: calc(100%/2 -20px);
                 margin-bottom: 20px;
+
                 &:nth-child(even) {
-					.notice-item--img {
-						img {
-							width: 90px;
-						}
-					}
+                    .notice-item--img {
+                        img {
+                            width: 90px;
+                        }
+                    }
                 }
+
                 &--img {
                     background: $c-turquoise;
                     width: 180px;
@@ -86,8 +155,9 @@
                     justify-content: center;
                     border-radius: 10px;
                     margin-right: 20px;
+
                     img {
-                    	width: 80px;
+                        width: 80px;
                     }
                 }
 
@@ -96,22 +166,22 @@
                 }
 
                 &--descr {
-                	margin-top: 10px;
-                	line-height: 1.6em;
+                    margin-top: 10px;
+                    line-height: 1.6em;
                     font-size: 16px;
                 }
             }
 
             .slick-dots {
-            	display: flex;
-            	justify-content: center;
-     
-            	position: absolute;
-            	margin: auto;
-            	width: 500px;
-            	left: 0;
-            	right: 0;
-            	bottom: -30px;
+                display: flex;
+                justify-content: center;
+
+                position: absolute;
+                margin: auto;
+                width: 500px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
 
                 li {
                     margin: 0 10px;
