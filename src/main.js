@@ -4,6 +4,10 @@ $(document).ready(function () {
         var curSlide = slider.$slides[nextSlide]
         // changeSliderInfo(curSlide);
         console.log(curSlide);
+
+        setTimeout(function() {
+            $('body').attr('data-theme', (nextSlide + 1));
+        }, 300);
     });
 
     $('.slider-for').slick({

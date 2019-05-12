@@ -1,9 +1,360 @@
 .home-page {
 
+    &[data-theme="1"] {
+        .logo {
+            img:nth-child(1) {
+                display: block;
+            }
+        }
+
+        .btn-order {
+            background: $c-red;
+            border-color: $c-red;
+            &:hover {
+                color: $c-red;
+                background: none;
+            }
+        }
+
+        .navigation>ul li a.active,
+        .navigation>ul li a:hover {
+            background: $c-red;
+        }
+
+        .burger.opened span {
+            background: $c-red;
+
+            &:after,
+            &:before {
+                background: $c-red;
+            }
+        }
+
+        .slick-slider-wrapper .slick-prev.slick-arrow,
+        .slick-slider-wrapper .slick-next.slick-arrow,
+        .slick-slider-wrapper .slider-for .slick-dots li button,
+        .text-slider .slick-dots li.slick-active button, 
+        .title span{
+            background: $c-red;
+        }
+
+        .slick-slider-wrapper .slider-for .slick-slide__title,
+        .more-link,
+        .text-slider:after {
+            color: $c-red;
+        }
+
+        .title span:before {
+            border-top-color: $c-red;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.first {
+            border-right: 5px solid  $c-red;
+            border-top: 5px solid  $c-red;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.last {
+            border-right: 5px solid $c-red;
+            border-bottom: 5px solid $c-red;
+        }
+
+        .disease__list_item:nth-child(2n) .disease__list_item--line.first {
+            border-left: 5px solid $c-red;
+            border-top: 5px solid $c-red;
+        }
+        .disease__list_item:nth-child(2n) .disease__list_item--line.last {
+            border-left: 5px solid $c-red;
+            border-bottom: 5px solid $c-red;
+        }
+    }
+
+    &[data-theme="2"] {
+        .logo {
+            img:nth-child(2) {
+                display: block;
+            }
+        }
+
+        .btn-order {
+            background: $c-turquoise;
+            border-color: $c-turquoise;
+            &:hover {
+                color: $c-turquoise;
+                background: none;
+            }
+        }
+
+        .navigation>ul li a.active,
+        .navigation>ul li a:hover {
+            background: $c-turquoise;
+        }
+
+        .burger.opened span {
+            background: $c-turquoise;
+
+            &:after,
+            &:before {
+                background: $c-turquoise;
+            }
+        }
+
+        .slick-slider-wrapper .slick-prev.slick-arrow,
+        .slick-slider-wrapper .slick-next.slick-arrow,
+        .slick-slider-wrapper .slider-for .slick-dots li button,
+        .text-slider .slick-dots li.slick-active button, 
+        .title span{
+            background: $c-turquoise;
+        }
+
+        .slick-slider-wrapper .slider-for .slick-slide__title,
+        .more-link,
+        .text-slider:after {
+            color: $c-turquoise;
+        }
+
+        .title span:before {
+            border-top-color: $c-turquoise;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.first {
+            border-right: 5px solid  $c-turquoise;
+            border-top: 5px solid  $c-turquoise;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.last {
+            border-right: 5px solid $c-turquoise;
+            border-bottom: 5px solid $c-turquoise;
+        }
+
+        .disease__list_item:nth-child(2n) .disease__list_item--line.first {
+            border-left: 5px solid $c-turquoise;
+            border-top: 5px solid $c-turquoise;
+        }
+        .disease__list_item:nth-child(2n) .disease__list_item--line.last {
+            border-left: 5px solid $c-turquoise;
+            border-bottom: 5px solid $c-turquoise;
+        }
+    }
+
+    &[data-theme="3"] {
+        .logo {
+            img:nth-child(3) {
+                display: block;
+            }
+        }
+
+        .btn-order {
+            background: $c-crimson;
+            border-color: $c-crimson;
+            &:hover {
+                color: $c-crimson;
+                background: none;
+            }
+        }
+
+        .navigation>ul li a.active,
+        .navigation>ul li a:hover {
+            background: $c-crimson;
+        }
+
+        .burger.opened span {
+            background: $c-crimson;
+
+            &:after,
+            &:before {
+                background: $c-crimson;
+            }
+        }
+
+        .slick-slider-wrapper .slick-prev.slick-arrow,
+        .slick-slider-wrapper .slick-next.slick-arrow,
+        .slick-slider-wrapper .slider-for .slick-dots li button,
+        .text-slider .slick-dots li.slick-active button, 
+        .title span{
+            background: $c-crimson;
+        }
+
+        .slick-slider-wrapper .slider-for .slick-slide__title,
+        .more-link,
+        .text-slider:after {
+            color: $c-crimson;
+        }
+
+        .title span:before {
+            border-top-color: $c-crimson;
+        }
+
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.first {
+            border-right: 5px solid  $c-crimson;
+            border-top: 5px solid  $c-crimson;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.last {
+            border-right: 5px solid $c-crimson;
+            border-bottom: 5px solid $c-crimson;
+        }
+
+        .disease__list_item:nth-child(2n) .disease__list_item--line.first {
+            border-left: 5px solid $c-crimson;
+            border-top: 5px solid $c-crimson;
+        }
+        .disease__list_item:nth-child(2n) .disease__list_item--line.last {
+            border-left: 5px solid $c-crimson;
+            border-bottom: 5px solid $c-crimson;
+        }
+    }
+
+    &[data-theme="4"] {
+        .logo {
+            img:nth-child(4) {
+                display: block;
+            }
+        }
+
+        .btn-order {
+            background: $c-dark-blue;
+            border-color: $c-dark-blue;
+            &:hover {
+                color: $c-dark-blue;
+                background: none;
+            }
+        }
+
+        .navigation>ul li a.active,
+        .navigation>ul li a:hover {
+            background: $c-dark-blue;
+        }
+
+        .burger.opened span {
+            background: $c-dark-blue;
+
+            &:after,
+            &:before {
+                background: $c-dark-blue;
+            }
+        }
+
+        .slick-slider-wrapper .slick-prev.slick-arrow,
+        .slick-slider-wrapper .slick-next.slick-arrow,
+        .slick-slider-wrapper .slider-for .slick-dots li button,
+        .text-slider .slick-dots li.slick-active button, 
+        .title span{
+            background: $c-dark-blue;
+        }
+
+        .slick-slider-wrapper .slider-for .slick-slide__title,
+        .more-link,
+        .text-slider:after {
+            color: $c-dark-blue;
+        }
+
+        .title span:before {
+            border-top-color: $c-dark-blue;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.first {
+            border-right: 5px solid  $c-dark-blue;
+            border-top: 5px solid  $c-dark-blue;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.last {
+            border-right: 5px solid $c-dark-blue;
+            border-bottom: 5px solid $c-dark-blue;
+        }
+
+        .disease__list_item:nth-child(2n) .disease__list_item--line.first {
+            border-left: 5px solid $c-dark-blue;
+            border-top: 5px solid $c-dark-blue;
+        }
+        .disease__list_item:nth-child(2n) .disease__list_item--line.last {
+            border-left: 5px solid $c-dark-blue;
+            border-bottom: 5px solid $c-dark-blue;
+        }
+    }
+
+    &[data-theme="5"] {
+        .logo {
+            img:nth-child(5) {
+                display: block;
+            }
+        }
+
+        .btn-order {
+            background: $c-orange;
+            border-color: $c-orange;
+            &:hover {
+                color: $c-orange;
+                background: none;
+            }
+        }
+
+        .navigation>ul li a.active,
+        .navigation>ul li a:hover {
+            background: $c-orange;
+        }
+
+        .burger.opened span {
+            background: $c-orange;
+
+            &:after,
+            &:before {
+                background: $c-orange;
+            }
+        }
+
+        .slick-slider-wrapper .slick-prev.slick-arrow,
+        .slick-slider-wrapper .slick-next.slick-arrow,
+        .slick-slider-wrapper .slider-for .slick-dots li button,
+        .text-slider .slick-dots li.slick-active button, 
+        .title span{
+            background: $c-orange;
+        }
+
+        .slick-slider-wrapper .slider-for .slick-slide__title,
+        .more-link,
+        .text-slider:after {
+            color: $c-orange;
+        }
+
+        .title span:before {
+            border-top-color: $c-orange;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.first {
+            border-right: 5px solid  $c-orange;
+            border-top: 5px solid  $c-orange;
+        }
+
+        .disease__list_item:nth-child(odd) .disease__list_item--line.last {
+            border-right: 5px solid $c-orange;
+            border-bottom: 5px solid $c-orange;
+        }
+
+        .disease__list_item:nth-child(2n) .disease__list_item--line.first {
+            border-left: 5px solid $c-orange;
+            border-top: 5px solid $c-orange;
+        }
+        .disease__list_item:nth-child(2n) .disease__list_item--line.last {
+            border-left: 5px solid $c-orange;
+            border-bottom: 5px solid $c-orange;
+        }
+    }
+
     header {
         background: none;
-        &:after, &:before {
+
+        &:after,
+        &:before {
             content: none;
+        }
+
+
+    }
+
+    .logo {
+        img {
+            display: none;
         }
     }
 
@@ -66,7 +417,7 @@
                         padding: 0 265px;
                     }
 
- 
+
                 }
 
                 .slick-dots {
@@ -273,7 +624,7 @@
             margin-top: 90px;
         }
 
-        
+
         .text-slider {
 
             padding: 53px 215px 49px 215px;
