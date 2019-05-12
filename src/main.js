@@ -5,9 +5,9 @@ $(document).ready(function () {
         // changeSliderInfo(curSlide);
         console.log(curSlide);
 
-        setTimeout(function() {
+        // setTimeout(function() {
             $('body').attr('data-theme', (nextSlide + 1));
-        }, 300);
+        // }, 300);
     });
 
     $('.slider-for').slick({
