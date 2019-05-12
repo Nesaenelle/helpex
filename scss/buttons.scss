@@ -105,4 +105,18 @@
             transform: rotate(180deg);
         }
     }
+
+    &-product {
+        border: none;
+        text-transform: uppercase;
+        padding: 19px 66px 21px 66px;
+        background: $c-red;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: relative;
+        text-align: left;
+    }
 }
