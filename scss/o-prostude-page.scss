@@ -1,6 +1,6 @@
 .o-prostude-page {
     main {
-        padding-bottom: 60px;
+        padding-bottom: 54px;
 
         .title {
             margin-top: 26px;
@@ -123,9 +123,13 @@
         .notises-slider {
             width: 100%;
             margin-top: 42px;
-            margin-bottom: 60px;
+            // margin-bottom: 60px;
             border-bottom: 1px solid #d4d4d4;
-            padding-bottom: 70px;
+            padding-bottom: 71px;
+
+            & + .title {
+            	margin-top: 87px;
+            }
 
             .slick-slide {
                 display: flex;
@@ -134,8 +138,9 @@
 
             .notice-item {
                 display: flex;
-                width: calc(100%/2 -20px);
+                width: calc(100%/2 - 0px);
                 margin-bottom: 20px;
+                padding-right: 30px;
 
                 &:nth-child(even) {
                     .notice-item--img {
@@ -147,14 +152,15 @@
 
                 &--img {
                     background: $c-turquoise;
-                    width: 180px;
-                    height: 150px;
-                    min-width: 180px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 10px;
-                    margin-right: 20px;
+
+				    width: 182px;
+				    height: 144px;
+				    min-width: 182px;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    border-radius: 6px;
+				    margin-right: 18px;
 
                     img {
                         width: 80px;
@@ -162,13 +168,17 @@
                 }
 
                 &--title {
-                    font-size: 22px;
+                    font-size: 24px;
                 }
 
                 &--descr {
-                    margin-top: 10px;
-                    line-height: 1.6em;
-                    font-size: 16px;
+                	margin-top: 13px;
+                	line-height: 1.7em;
+                	font-size: 16px;
+                }
+
+                .more-link {
+                	margin-top: 13px;
                 }
             }
 
@@ -229,8 +239,10 @@
                 padding: 0px 30px 0px 14px;
                 display: flex;
                 align-items: center;
+                position: relative;
 
                 span {
+                	min-width: 125px;
                     color: #f3f3f3;
                     font-size: 112px;
                     margin-right: 17px;
@@ -239,6 +251,7 @@
                     display: inline-block;
                     position: relative;
                     top: 8px;
+                    text-align: center;
 
                     b {
                         color: $c-turquoise;
@@ -248,6 +261,28 @@
                 p {
                     line-height: 2em;
                     font-size: 14px;
+                }
+
+                &--line {
+                	position: absolute;
+                	opacity: 0.3;
+                    &.first {
+                        left: -5px;
+                        top: -5px;
+                        border-left: 4px solid $c-turquoise;
+                        border-top: 4px solid $c-turquoise;
+                        width: 120px;
+                        height: 71px;
+                    }
+
+                    &.last {
+                        bottom: -5px;
+                        right: -5px;
+                        border-right: 4px solid $c-turquoise;
+                        border-bottom: 4px solid $c-turquoise;
+                        width: 181px;
+                        height: 119px;
+                    }
                 }
             }
         }
