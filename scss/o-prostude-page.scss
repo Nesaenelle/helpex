@@ -463,6 +463,14 @@
                             right: 2%;
                             bottom: 2%;
                         }
+
+                        &>div {
+
+                            @media screen and (max-width: 1440px) {
+                                font-size: 20px;
+                                line-height: 1.3em
+                            }
+                        }
                     }
 
                     &>div {
@@ -474,6 +482,9 @@
                         font-size: 148px;
                         line-height: 0.5em;
                         color: #ebeff0;
+                        @media screen and (max-width: 1440px) {
+                            font-size: 120px;
+                        }
                     }
                 }
 
@@ -559,6 +570,14 @@
                         @media screen and (max-width: 1440px) {
                             min-width: 130px;
                             height: 130px;
+                        }
+
+                        &>div {
+
+                            @media screen and (max-width: 1440px) {
+                                font-size: 14px;
+                                line-height: 1.3em
+                            }
                         }
                     }
 
