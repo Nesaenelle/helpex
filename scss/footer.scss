@@ -3,11 +3,16 @@ footer {
     position: relative;
     height: 215px;
     overflow: hidden;
+
     @media screen and (max-width: 1024px) {
         // display: none;
     }
 
     .logo {
+        @media screen and (max-width: 768px) {
+            margin: auto;
+        }
+
         img {
             @media screen and (max-width: 1024px) {
                 max-width: 130px;
@@ -19,17 +24,19 @@ footer {
             }
         }
     }
+
     .navigation {
         // margin-right: -23px;
         margin-top: -32px;
+
         ul {
             li {
                 margin: 0 0px;
-                &:last-child {
-                    a {
 
-                    }
+                &:last-child {
+                    a {}
                 }
+
                 a {
                     padding: 7px 21px 9px 21px;
                     font-size: 16px;
@@ -42,43 +49,48 @@ footer {
             }
         }
     }
+
     .container {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         height: 100%;
+
         // padding: 0;
-        & > div:first-child {
+        &>div:first-child {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+
             @media screen and (max-width: 1024px) {
                 margin-top: 0;
             }
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
             display: flex;
             width: 100%;
             justify-content: space-between;
             align-items: center;
-          margin-top: 10px;
-          flex-wrap:wrap;
-          // @media screen and (max-width: 1024px) {
+            margin-top: 10px;
+            flex-wrap: wrap;
+            // @media screen and (max-width: 1024px) {
             // flex-wrap:wrap;
-          // }
+            // }
         }
-        & > div:last-child {
 
-
-        }
+        &>div:last-child {}
     }
+
     .designed {
         color: #3b3b3b;
+
         a {
             text-decoration: underline;
         }
+
         @media screen and (max-width: 768px) {
             font-size: 14px;
         }
@@ -87,28 +99,33 @@ footer {
     .copyright {
         color: #3b3b3b;
         font-size: 16px;
+
         @media screen and (max-width: 768px) {
             font-size: 14px;
         }
     }
+
     .policy {
         text-decoration: underline;
         color: #3b3b3b;
         margin-left: -75px;
-         @media screen and (max-width: 1024px) {
+
+        @media screen and (max-width: 1024px) {
             margin: 0 20px;
-         }
-         @media screen and (max-width: 768px) {
-             font-size: 14px;
-             margin: 8px 0;
-         }
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            margin: 8px 0;
+            width: 100%;
+        }
     }
 
     .btn {
-                @media screen and (max-width: 1024px) {
-                    margin: 20px auto;
-                    padding: 13px 30px 14px;
-                    font-size: 14px;
-                }
+        @media screen and (max-width: 1024px) {
+            margin: 20px auto;
+            padding: 13px 30px 14px;
+            font-size: 14px;
+        }
     }
 }
