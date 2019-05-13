@@ -18,9 +18,11 @@
     //     }
     // }
 
-    @keyframes type{ 
-      from { width: 0; } 
-    } 
+    @keyframes type {
+        from {
+            width: 0;
+        }
+    }
 
 
     header {
@@ -130,22 +132,26 @@
                 position: relative;
 
                 &.slick-active {
+
                     // &[data-product="1"], &[data-product="2"], &[data-product="3"] , &[data-product="4"] , &[data-product="5"] {
-                        .product-title {
-                            animation: 1.5s fadeIn ease-in-out;
-                            animation-delay: 0.5s;
-                            animation-fill-mode: forwards;
-                        }
+                    .product-title {
+                        animation: 1.5s fadeIn ease-in-out;
+                        animation-delay: 0.5s;
+                        animation-fill-mode: forwards;
+                    }
 
-                        .product-subtitle {
-                            animation: type 7s steps(200, end); 
-                        }
+                    .product-subtitle {
+                        animation: type 7s steps(200, end);
+                    }
 
-                        .product-text, .btn, a {
-                            animation: 1.5s fadeIn ease-in-out;
-                            animation-delay: 1.5s;
-                            animation-fill-mode: forwards;
-                        }
+                    .product-text,
+                    .btn,
+                    a {
+                        animation: 1.5s fadeIn ease-in-out;
+                        animation-delay: 1.5s;
+                        animation-fill-mode: forwards;
+                    }
+
                     // }
                 }
 
@@ -396,6 +402,18 @@
             position: relative;
             z-index: 2;
 
+            @media screen and (max-width: 1280px) {
+                padding-top: 100px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 90px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding-top: 80px;
+            }
+
             a {
                 text-decoration: underline;
                 text-transform: uppercase;
@@ -427,8 +445,23 @@
                 height: 500px;
                 line-height: 0.9em;
                 left: -168px;
-                // text-indent: -0.28em;
 
+                // text-indent: -0.28em;
+                @media screen and (max-width: 1280px) {
+                    font-size: 500px;
+                    left: -90px;
+                    line-height: 1.1em;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 400px;
+                    left: -70px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 300px;
+                    left: -50px;
+                }
             }
 
             .product-title {
@@ -443,6 +476,21 @@
                 opacity: 0;
                 visibility: hidden;
 
+                @media screen and (max-width: 1280px) {
+                    font-size: 140px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 120px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 98px;
+                }
+
+                @media screen and (max-height: 700px) {
+                    font-size: 98px;
+                }
 
             }
 
@@ -455,6 +503,18 @@
                 width: 30em;
                 white-space: nowrap;
                 overflow: hidden;
+
+                @media screen and (max-width: 1280px) {
+                    font-size: 24px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 22px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
             }
 
             .product-text {
@@ -510,6 +570,16 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 // width: 450px;
+
+                 @media screen and (max-width: 1280px) {
+                    font-size: 32px;
+                 }
+                 @media screen and (max-width: 1024px) {
+                    font-size: 28px;
+                 }
+                 @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                 }
             }
 
             .cross-big {
