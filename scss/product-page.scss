@@ -1,4 +1,28 @@
 .product-page {
+
+    // &[data-product="1"], &[data-product="2"], &[data-product="3"] , &[data-product="4"] , &[data-product="5"] {
+    //     .product-title {
+    //         animation: 2s fadeIn ease-in-out;
+    //         animation-delay: 0.5s;
+    //         animation-fill-mode: forwards;
+    //     }
+
+    //     .product-subtitle {
+    //         animation: type 10s steps(200, end); 
+    //     }
+
+    //     .product-text, .btn, a {
+    //         animation: 2s fadeIn ease-in-out;
+    //         animation-delay: 1.5s;
+    //         animation-fill-mode: forwards;
+    //     }
+    // }
+
+    @keyframes type{ 
+      from { width: 0; } 
+    } 
+
+
     header {
         background: none;
 
@@ -17,14 +41,18 @@
                 }
             }
         }
+
         .logo {
-        	img {
-        		display: none;
-        	}	
+            img {
+                display: none;
+            }
         }
+
         &.product-1 {
             .logo {
-                img:nth-child(1) {display: block;}
+                img:nth-child(1) {
+                    display: block;
+                }
             }
 
             .navigation>ul li a.active,
@@ -35,7 +63,9 @@
 
         &.product-2 {
             .logo {
-                img:nth-child(2) {display: block;}
+                img:nth-child(2) {
+                    display: block;
+                }
             }
 
             .navigation>ul li a.active,
@@ -46,7 +76,9 @@
 
         &.product-3 {
             .logo {
-                img:nth-child(3) {display: block;}
+                img:nth-child(3) {
+                    display: block;
+                }
             }
 
             .navigation>ul li a.active,
@@ -57,7 +89,9 @@
 
         &.product-4 {
             .logo {
-                img:nth-child(4) {display: block;}
+                img:nth-child(4) {
+                    display: block;
+                }
             }
 
             .navigation>ul li a.active,
@@ -68,7 +102,9 @@
 
         &.product-5 {
             .logo {
-                img:nth-child(5) {display: block;}
+                img:nth-child(5) {
+                    display: block;
+                }
             }
 
             .navigation>ul li a.active,
@@ -92,6 +128,26 @@
                 width: 100%;
                 overflow: hidden;
                 position: relative;
+
+                &.slick-active {
+                    // &[data-product="1"], &[data-product="2"], &[data-product="3"] , &[data-product="4"] , &[data-product="5"] {
+                        .product-title {
+                            animation: 1.5s fadeIn ease-in-out;
+                            animation-delay: 0.5s;
+                            animation-fill-mode: forwards;
+                        }
+
+                        .product-subtitle {
+                            animation: type 7s steps(200, end); 
+                        }
+
+                        .product-text, .btn, a {
+                            animation: 1.5s fadeIn ease-in-out;
+                            animation-delay: 1.5s;
+                            animation-fill-mode: forwards;
+                        }
+                    // }
+                }
 
                 // &:after {
                 //     content: '';
@@ -130,7 +186,7 @@
 
                 &.product-1 {
                     &:before {
-                        background: url(../img/product-slide-1.png) no-repeat;//$c-red;
+                        background: url(../img/product-slide-1.png) no-repeat; //$c-red;
                         background-size: cover;
                     }
 
@@ -153,11 +209,12 @@
                 }
 
                 &.product-2 {
+
                     // &:before {
                     //     background: $c-turquoise;
                     // }
                     &:before {
-                        background: url(../img/product-slide-2.png) no-repeat;//$c-red;
+                        background: url(../img/product-slide-2.png) no-repeat; //$c-red;
                         background-size: cover;
                     }
 
@@ -168,17 +225,19 @@
                     .btn-product {
                         background: $c-turquoise;
                     }
-                    .middle-img  {
-                    	left: 90px;
+
+                    .middle-img {
+                        left: 90px;
                     }
                 }
 
                 &.product-3 {
+
                     // &:before {
                     //     background: $c-crimson;
                     // }
                     &:before {
-                        background: url(../img/product-slide-3.png) no-repeat;//$c-red;
+                        background: url(../img/product-slide-3.png) no-repeat; //$c-red;
                         background-size: cover;
                     }
 
@@ -190,9 +249,9 @@
                         background: $c-crimson;
                     }
 
-                    .middle-img  {
-                    	left: 175px;
-                    	bottom: 170px;
+                    .middle-img {
+                        left: 175px;
+                        bottom: 170px;
                     }
 
                     .bottom-img {
@@ -202,11 +261,12 @@
                 }
 
                 &.product-4 {
+
                     // &:before {
                     //     background: $c-dark-blue;
                     // }
                     &:before {
-                        background: url(../img/product-slide-4.png) no-repeat;//$c-red;
+                        background: url(../img/product-slide-4.png) no-repeat; //$c-red;
                         background-size: cover;
                     }
 
@@ -218,9 +278,9 @@
                         background: $c-dark-blue;
                     }
 
-                    .middle-img  {
-                    	left: 105px;
-                    	bottom: 170px;
+                    .middle-img {
+                        left: 105px;
+                        bottom: 170px;
                     }
 
                     .bottom-img {
@@ -230,11 +290,12 @@
                 }
 
                 &.product-5 {
+
                     // &:before {
                     //     background: $c-orange;
                     // }
                     &:before {
-                        background: url(../img/product-slide-5.png) no-repeat;//$c-red;
+                        background: url(../img/product-slide-5.png) no-repeat; //$c-red;
                         background-size: cover;
                     }
 
@@ -334,7 +395,7 @@
             padding-top: 140px;
             position: relative;
             z-index: 2;
-            
+
             a {
                 text-decoration: underline;
                 text-transform: uppercase;
@@ -346,13 +407,16 @@
                 display: flex;
                 align-items: center;
 
+                opacity: 0;
+                visibility: hidden;
+
                 img {
                     width: 29px;
                     margin-right: 10px;
                     display: block;
                 }
             }
-            
+
             .product-letter {
                 font-size: 600px;
                 font-family: 'circe';
@@ -375,6 +439,11 @@
                 text-indent: -13px;
                 line-height: 1.1em;
                 color: $c-red;
+
+                opacity: 0;
+                visibility: hidden;
+
+
             }
 
             .product-subtitle {
@@ -383,6 +452,9 @@
                 font-weight: 600;
                 color: #454545;
                 font-family: 'circe';
+                width: 30em;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
             .product-text {
@@ -391,10 +463,16 @@
                 font-size: 14px;
                 color: #454545;
                 padding-right: 60px;
+
+                opacity: 0;
+                visibility: hidden;
             }
 
             .btn {
                 margin-top: 53px;
+
+                opacity: 0;
+                visibility: hidden;
             }
         }
 
@@ -407,13 +485,14 @@
             // overflow: hidden;
 
             .middle-img {
-            	position: absolute;
-            	left: 150px;
-            	top: 0;
-            	bottom: 0;
-            	margin: auto;
-            	z-index: 3;
+                position: absolute;
+                left: 150px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 3;
             }
+
             .bottom-img {
                 bottom: 0;
                 position: absolute;
