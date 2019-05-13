@@ -525,6 +525,10 @@
                     font-size: 84px;
                 }
 
+                @media screen and (max-height:  600px) {
+                    font-size: 48px;
+                }
+
                 @media screen and (max-width: 480px) {
                     font-size: 72px;
                 }
@@ -568,6 +572,10 @@
                     padding-right: 0;
                     line-height: 1.5em;
                 }
+
+                   @media screen and (max-height:  600px) {
+                    line-height: 1.2em;
+                   }
             }
 
             .btn {
@@ -577,9 +585,12 @@
                 visibility: hidden;
                 @media screen and (max-width: 768px) {
                     max-width: 300px;
-                    padding: 20px;
+                    padding: 16px;
                     width: 100%;
                     text-align: center;
+                }
+                @media screen and (max-height:  600px) {
+                    margin-top: 30px;
                 }
                  @media screen and (max-width: 480px) {
                     margin-top: 30px;
