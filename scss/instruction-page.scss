@@ -2,6 +2,10 @@
     main {
         padding-bottom: 61px;
 
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 40px;
+        }
+
         .container {
             display: flex;
             justify-content: space-between;
@@ -70,6 +74,10 @@
 
         .left-side {
             width: 332px;
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
         }
 
         .right-side {
@@ -78,6 +86,10 @@
             flex-wrap: wrap;
             justify-content: space-between;
             position: relative;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
         }
 
 
@@ -88,6 +100,9 @@
             padding-left: 20px;
             width: 100%;
             letter-spacing: 1.3px;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
 
             &:after {
                 content: '';
@@ -110,14 +125,41 @@
             display: flex;
             align-items: center;
 
+            @media screen and (max-width: 1280px) {
+                width: 340px;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: 200px;
+            }
+
             img {
                 display: block;
                 margin: 21px auto 0;
+
+                @media screen and (max-width: 1280px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 768px) {
+                    max-width: 300px;
+                  
+                }
             }
         }
 
         .top-text {
             width: calc(100% - 420px - 20px);
+
+            @media screen and (max-width: 1280px) {
+                width: calc(100% - 340px - 20px);
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-top: 40px;
+            }
 
             .header {
                 margin-top: -3px;
@@ -128,6 +170,9 @@
                 padding-left: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.7em;
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
 
             a {
@@ -210,6 +255,9 @@
 
             .testimony {
                 width: 56%;
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
 
                 span {
                     margin-top: 7px;
@@ -251,7 +299,10 @@
 
             .contraindications {
                 width: 44%;
-
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                    margin-top: 15px;
+                }
                 b {
                     color: #fa303c;
                     font-size: 18px;
