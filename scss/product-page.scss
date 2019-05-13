@@ -1,22 +1,5 @@
 .product-page {
 
-    // &[data-product="1"], &[data-product="2"], &[data-product="3"] , &[data-product="4"] , &[data-product="5"] {
-    //     .product-title {
-    //         animation: 2s fadeIn ease-in-out;
-    //         animation-delay: 0.5s;
-    //         animation-fill-mode: forwards;
-    //     }
-
-    //     .product-subtitle {
-    //         animation: type 10s steps(200, end); 
-    //     }
-
-    //     .product-text, .btn, a {
-    //         animation: 2s fadeIn ease-in-out;
-    //         animation-delay: 1.5s;
-    //         animation-fill-mode: forwards;
-    //     }
-    // }
 
     @keyframes type {
         from {
@@ -61,6 +44,20 @@
             .navigation>ul li a:hover {
                 background: $c-red;
             }
+
+            .burger {
+                span {
+                    @media screen and (max-width: 768px) {
+                         background: $c-red;
+    
+                          &:after,
+                          &:before {
+                              background: $c-red;
+                          }      
+                    }
+
+                }
+            }
         }
 
         &.product-2 {
@@ -73,6 +70,20 @@
             .navigation>ul li a.active,
             .navigation>ul li a:hover {
                 background: $c-turquoise;
+            }
+
+            .burger {
+                span {
+                    @media screen and (max-width: 768px) {
+                         background: $c-turquoise;
+            
+                          &:after,
+                          &:before {
+                              background: $c-turquoise;
+                          }      
+                    }
+
+                }
             }
         }
 
@@ -87,6 +98,20 @@
             .navigation>ul li a:hover {
                 background: $c-crimson;
             }
+
+            .burger {
+                span {
+                    @media screen and (max-width: 768px) {
+                         background: $c-crimson;
+            
+                          &:after,
+                          &:before {
+                              background: $c-crimson;
+                          }      
+                    }
+
+                }
+            }
         }
 
         &.product-4 {
@@ -100,6 +125,20 @@
             .navigation>ul li a:hover {
                 background: $c-dark-blue;
             }
+
+            .burger {
+                span {
+                    @media screen and (max-width: 768px) {
+                         background: $c-dark-blue;
+            
+                          &:after,
+                          &:before {
+                              background: $c-dark-blue;
+                          }      
+                    }
+
+                }
+            }
         }
 
         &.product-5 {
@@ -112,6 +151,20 @@
             .navigation>ul li a.active,
             .navigation>ul li a:hover {
                 background: $c-orange;
+            }
+
+            .burger {
+                span {
+                    @media screen and (max-width: 768px) {
+                         background: $c-orange;
+            
+                          &:after,
+                          &:before {
+                              background: $c-orange;
+                          }      
+                    }
+
+                }
             }
         }
 
