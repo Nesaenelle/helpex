@@ -178,6 +178,11 @@
                     // margin-top: -12px;
                     opacity: 0;
                     visibility: hidden;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 1.4em;
+                    }
                 }
 
                 .hexagon {
@@ -199,6 +204,7 @@
                         text-align: center;
                         font-weight: 600;
                         text-transform: uppercase;
+
                     }
 
                     b {
@@ -252,21 +258,54 @@
                     right: 122px;
                     top: -4px;
 
+                    @media screen and (max-width: 1440px) {
+                        right: -490px;
+                        top: -4px;
+                        left: 0;
+                        margin: auto;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 300px;
+                        right: -402px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                         width: 100%;
+                    }
+
+
                     .hexagon {
                         min-width: 117px;
                         height: 112px;
                         margin-right: 20px;
 
+                        @media screen and (max-width: 1440px) {
+                            min-width: 80px;
+                            height: 80px;
+                        }
+
                         // color: #fff;
 
                         &>div {
                             font-size: 12px;
+
+                            @media screen and (max-width: 1024px) {
+                                font-size: 10px;
+                            }
                         }
 
                         b {
                             font-size: 68px;
                             // color: #00b2aa;
                             line-height: 0.9em;
+
+                            @media screen and (max-width: 1024px) {
+                                font-size: 48px;
+                                line-height: 1.1em;
+                            }
                         }
 
                         // &:after {
@@ -280,16 +319,53 @@
                     right: 567px;
                     width: 474px;
 
+                    @media screen and (max-width: 1440px) {
+                        right: 0;
+                        width: 474px;
+                        left: -402px;
+                        margin: auto;
+
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 340px;
+                        left: -202px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                        top: 90px;
+                         width: 100%;
+                    }
+
                     .hexagon {
                         margin-left: 20px;
                         min-width: 150px;
                         height: 150px;
+
+                        @media screen and (max-width: 1440px) {
+                            min-width: 110px;
+                            height: 110px;
+                        }
+
+                        &>div {
+                            @media screen and (max-width: 1440px) {
+                                font-size: 12px;
+                                line-height: 1.5em;
+                            }
+                        }
                     }
 
                     b {
                         font-size: 98px;
                         line-height: 0.6em;
                         color: #ebeff0;
+
+                        @media screen and (max-width: 1440px) {
+                            font-size: 72px;
+                            line-height: 0.8em;
+                        }
                     }
                 }
 
@@ -298,11 +374,40 @@
                     right: 281px;
                     width: 506px;
 
+                    @media screen and (max-width: 1440px) {
+                        right: -239px;
+                        left: 0;
+                        top: 167px;
+                        margin: auto;
+
+                    }
+
+
+                    @media screen and (max-width: 1024px) {
+                        width: 340px;
+                        left: -102px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                        top: 200px;
+                        width: 100%;
+                    }
+
                     .hexagon {
                         margin-left: 20px;
                         min-width: 160px;
                         height: 160px;
                         margin-right: 30px;
+
+                        @media screen and (max-width: 1440px) {
+                            min-width: 120px;
+                            height: 120px;
+                        }
+                        @media screen and (max-width: 768px) {
+                            margin-left: 0;
+                        }
                     }
 
                     b {
@@ -317,11 +422,40 @@
                     right: 721px;
                     width: 568px;
 
+                    @media screen and (max-width: 1440px) {
+                        right: 0px;
+                        left:  -560px;
+                        margin: auto;
+                        top: 240px;
+                        width: 440px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        left:  -400px;
+                        width: 360px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                        top: 330px;
+                        width: 100%;
+                    }
+
                     .hexagon {
                         margin-left: 20px;
                         min-width: 215px;
                         height: 215px;
                         margin-right: 30px;
+
+                        @media screen and (max-width: 1440px) {
+                            min-width: 160px;
+                            height: 160px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+                        }
 
                         &:after {
                             top: 2%;
@@ -348,10 +482,34 @@
                     right: 327px;
                     width: 450px;
 
+                    @media screen and (max-width: 1440px) {
+                        top: 350px;
+                        right: 0px;
+                        left:  220px;
+                        margin: auto;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 400px;
+                        left:  260px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                        top: 490px;
+                        width: 100%;
+                    }
+
                     .hexagon {
                         min-width: 125px;
                         height: 125px;
                         margin-right: 28px;
+
+                        @media screen and (max-width: 1440px) {
+                            min-width: 100px;
+                            height: 100px;
+                        }
                     }
 
 
@@ -372,10 +530,36 @@
                     right: 671px;
                     width: 484px;
 
+                    @media screen and (max-width: 1440px) {
+                        top: 450px;
+                        right: 460px;
+                        left:  0;
+                        margin: auto;
+                        width: 400px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 400px;
+                        right: 400px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        left: 0;
+                        right: 0;
+                        top: 610px;
+                        width: 100%;
+                    }
+
+
                     .hexagon {
                         min-width: 160px;
                         height: 160px;
                         margin-left: 20px;
+
+                        @media screen and (max-width: 1440px) {
+                            min-width: 130px;
+                            height: 130px;
+                        }
                     }
 
                     &>div {
@@ -661,6 +845,7 @@
                 p {
                     line-height: 2em;
                     font-size: 14px;
+
                     @media screen and (max-width: 1024px) {
                         line-height: 1.5em;
                         font-size: 13px;
