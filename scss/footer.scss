@@ -6,6 +6,19 @@ footer {
     @media screen and (max-width: 1024px) {
         // display: none;
     }
+
+    .logo {
+        img {
+            @media screen and (max-width: 1024px) {
+                max-width: 130px;
+                margin-top: 8px;
+            }
+
+            @media screen and (max-width: 768px) {
+                max-width: 100px;
+            }
+        }
+    }
     .navigation {
         // margin-right: -23px;
         margin-top: -32px;
@@ -20,6 +33,11 @@ footer {
                 a {
                     padding: 7px 21px 9px 21px;
                     font-size: 16px;
+
+                    @media screen and (max-width: 1280px) {
+                        padding: 7px 14px 9px 14px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -36,6 +54,9 @@ footer {
             justify-content: space-between;
             align-items: center;
             margin-top: 20px;
+            @media screen and (max-width: 1024px) {
+                margin-top: 0;
+            }
         }
         & > div:nth-child(2) {
             display: flex;
@@ -43,6 +64,10 @@ footer {
             justify-content: space-between;
             align-items: center;
           margin-top: 10px;
+          flex-wrap:wrap;
+          // @media screen and (max-width: 1024px) {
+            // flex-wrap:wrap;
+          // }
         }
         & > div:last-child {
 
@@ -54,15 +79,36 @@ footer {
         a {
             text-decoration: underline;
         }
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     .copyright {
         color: #3b3b3b;
         font-size: 16px;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
     .policy {
         text-decoration: underline;
         color: #3b3b3b;
         margin-left: -75px;
+         @media screen and (max-width: 1024px) {
+            margin: 0 20px;
+         }
+         @media screen and (max-width: 768px) {
+             font-size: 14px;
+             margin: 8px 0;
+         }
+    }
+
+    .btn {
+                @media screen and (max-width: 1024px) {
+                    margin: 20px auto;
+                    padding: 13px 30px 14px;
+                    font-size: 14px;
+                }
     }
 }
