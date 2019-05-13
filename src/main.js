@@ -70,7 +70,7 @@ $(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 7000,
           pauseOnHover: true,
-          // asNavFor: '.slider-nav',
+          asNavFor: '.mobile-slider',
           // prevArrow: $('.slider-arrow-prev'),
           // nextArrow: $('.slider-arrow-next')
         });
