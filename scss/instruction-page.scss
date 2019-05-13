@@ -76,7 +76,8 @@
             width: 332px;
 
             @media screen and (max-width: 1024px) {
-                display: none;
+                // display: none;
+                width: 100%;
             }
         }
 
@@ -89,6 +90,7 @@
 
             @media screen and (max-width: 1024px) {
                 width: 100%;
+                margin-top: 30px;
             }
         }
 

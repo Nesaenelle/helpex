@@ -19,13 +19,37 @@
                 display: block;
                 margin-right: 25px;
                 margin-top: 7px;
+
+                @media screen and (max-width: 1280px) {
+                    max-width: 600px;
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    display: block;
+
+                    float: none;
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin: 0 auto 20px;
+                }
             }
 
             p {
                 line-height: 1.81em;
 
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+
                 &~p {
                     margin-top: 27px;
+
+                    @media screen and (max-width: 768px) {
+                        margin-top: 15px;
+                    }
                 }
             }
         }
@@ -42,11 +66,23 @@
                 padding: 20px 10px 20px 20px;
                 display: flex;
                 justify-content: space-between;
+
                 // align-contect: center;
+                @media screen and (max-width: 600px) {
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    height: 450px;
+                    justify-content: center;
+                    padding: 20px 10px 20px 10px;
+                }
 
                 >img {
                     display: block;
                     margin: auto;
+
+                    @media screen and (max-width: 600px) {
+                        max-width: 150px;
+                    }
                 }
 
                 &>div {
@@ -55,6 +91,11 @@
                     align-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                        justify-content: center;
+                    }
                 }
 
                 &--composition {
@@ -66,6 +107,16 @@
                     letter-spacing: 0.8px;
                     margin: 35px 0;
                     margin-left: 13px;
+
+                    @media screen and (max-width: 600px) {
+                        // max-width: 150px;
+                        // justify-content: center;
+                        // display: flex;
+                        // flex-wrap:wrap;
+                        width: 85px;
+                        margin: 35px 10px;
+                        text-align: center;
+                    }
 
                     &+.product-slider__item--composition {
                         margin-left: 0;
@@ -98,6 +149,11 @@
                     font-size: 26px;
                     width: 100%;
 
+                    @media screen and (max-width: 600px) {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+
                     &+.product-slider__item--composition {
                         &:before {
                             content: '';
@@ -120,6 +176,11 @@
 
                 .btn {
                     width: 80%;
+
+                    @media screen and (max-width: 600px) {
+                        max-width: 250px;
+                        margin: auto;
+                    }
                 }
             }
 
@@ -154,6 +215,10 @@
                 background: #fff;
                 box-shadow: 0 0 7px -4px #aaa;
 
+                @media screen and (max-width: 768px) {
+                    left: 5px;
+                }
+
                 &:after {
                     content: "";
                     display: block;
@@ -177,6 +242,10 @@
                 background: #fff;
                 box-shadow: 0 0 7px -4px #aaa;
 
+                @media screen and (max-width: 768px) {
+                    right: 5px;
+                }
+
                 &:after {
                     content: "";
                     display: block;
@@ -196,22 +265,50 @@
             margin-top: 43px;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             &__item {
                 width: 49%;
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
                 align-items: flex-start;
+    
+                @media screen and (max-width: 980px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 480px) {
+                    flex-wrap:wrap;
+                }
+                &+.product-list__item {
+                    @media screen and (max-width: 980px) {
+                        margin-top: 30px;
+                    }
+                }
 
-                img {}
+                img {
+                    width: 100%;
+                    display: block;
+                    max-width: 182px;
+                    margin-right: 20px;
+                    @media screen and (max-width: 1280px) {
+                        max-width: 150px;
+                    }
+                }
 
                 &>div {
                     width: 70%;
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
+                    }
                 }
 
                 &--title {
                     font-size: 24px;
                     font-weight: 500;
+
+                    @media screen and (max-width: 1280px) {
+                        font-size: 22px;
+                    }
                 }
 
                 &--descr {
@@ -219,6 +316,10 @@
                     font-size: 16px;
                     line-height: 1.8em;
                     padding-right: 10px;
+
+                    @media screen and (max-width: 1280px) {
+                        font-size: 14px;
+                    }
                 }
 
                 .more-link {
@@ -233,6 +334,10 @@
             margin-top: 34px;
             line-height: 1.9em;
             letter-spacing: 0px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }
