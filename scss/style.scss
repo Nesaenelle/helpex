@@ -38,18 +38,31 @@ main {
     padding-bottom: 70px;
     overflow: hidden;
     position: relative;
-    // @media screen and (max-width: 1024px) {
-    //   padding-top: 80px;
-    // }
-    // @media screen and (max-width: 768px) {
-    //   padding-top: 60px;
-    // }
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 50px;
+    }
+
 }
 
 .breadcrumbs {
     margin-top: 22px;
     width: 100%;
+    @media screen and (max-width: 1024px) {
+        margin-top: 18px;
+    }
 
+    @media screen and (max-width: 768px) {
+        margin-top: 18px;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 10px;
+    }
     span {
         color: $c-turquoise;
     }
@@ -77,21 +90,7 @@ main {
     }
 }
 
-.main-title {
-    font-size: 144px;
-    color: #454545;
-    letter-spacing: 17px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 130px;
-    font-family: 'AvenirLTStd';
-}
 
-.main-subtitle {
-    text-align: center;
-    font-size: 26px;
-    margin-top: 12px;
-}
 
 .title {
     text-align: center;

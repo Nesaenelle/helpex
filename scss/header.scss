@@ -8,27 +8,40 @@ header {
     width: 100%;
     background: #fff;
 
+    @media screen and (max-width: 1024px) {
+        height: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 60px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 50px;
+    }
+
     &:before {
-      content: "";
-      width: 100%;
-      // top: 113px;
-      bottom: 5px;
-      left: 0;
-      position: absolute;
-      z-index: 1;
-      background: #fff;
-      height: 10px;
-    }    
+        content: "";
+        width: 100%;
+        // top: 113px;
+        bottom: 5px;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        background: #fff;
+        height: 10px;
+    }
+
     &:after {
-      content: "";
-      width: 100%;
-      // top: 113px;
-      bottom: 0px;
-      left: 0;
-      position: absolute;
-      z-index: -1;
-      height: 10px;
-      box-shadow: 0 0 7px -3px #666;
+        content: "";
+        width: 100%;
+        // top: 113px;
+        bottom: 0px;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        height: 10px;
+        box-shadow: 0 0 7px -3px #666;
     }
 
     .container {
@@ -40,40 +53,49 @@ header {
         align-items: center;
         // padding: 0;
 
-        @media screen and (max-width: 1440px) {
-            padding: 0 40px;
-        }
+        // @media screen and (max-width: 1440px) {
+        //     padding: 0 40px;
+        // }
 
-        @media screen and (max-width: 1280px) {
-            padding: 0 20px;
-        }
+        // @media screen and (max-width: 1280px) {
+        //     padding: 0 20px;
+        // }
     }
 
     .logo {
         img {
             width: 100%;
 
-            @media screen and (max-width: 1280px) {
+            @media screen and (max-width: 1024px) {
                 max-width: 130px;
+                margin-top: 8px;
             }
+
+            @media screen and (max-width: 768px) {
+                max-width: 100px;
+            }
+
+            // @media screen and (max-width: 1280px) {
+            //     max-width: 130px;
+            // }
         }
     }
 
     .navigation {
-      height: 100%;
-      margin-right: 100px;
-      // width: 0;
-      // opacity: 0;
-      // visibility: hidden;
-      transition: 0.4s;
-      transform: translateY(-200px);
+        height: 100%;
+        margin-right: 100px;
+        // width: 0;
+        // opacity: 0;
+        // visibility: hidden;
+        transition: 0.4s;
+        transform: translateY(-200px);
 
-      &.opened {
-          // width: 100%;
-          // opacity: 1;
-          // visibility: visible;
-          transform: translateY(0px);
-      }
+        &.opened {
+            // width: 100%;
+            // opacity: 1;
+            // visibility: visible;
+            transform: translateY(0px);
+        }
     }
 
 }

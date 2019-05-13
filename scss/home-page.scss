@@ -399,9 +399,65 @@
         .container {
             padding: 0 0 70px 0;
             position: relative;
-               @media screen and (max-width: 1024px) {
+
+            @media screen and (max-width: 1024px) {
                 padding-bottom: 40px;
-               }
+            }
+        }
+
+        .main-title {
+            font-size: 144px;
+            color: #454545;
+            letter-spacing: 17px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 130px;
+            font-family: 'AvenirLTStd';
+
+            @media screen and (max-width: 1280px) {
+                font-size: 120px;
+                letter-spacing: 15px;
+                line-height: 120px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 100px;
+                letter-spacing: 13px;
+                line-height: 100px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 80px;
+                letter-spacing: 10px;
+                line-height: 100px;
+            }
+
+            @media screen and (max-width: 480px) {
+                font-size: 60px;
+                letter-spacing: 5px;
+                line-height: 80px;
+            }
+        }
+
+        .main-subtitle {
+            text-align: center;
+            font-size: 26px;
+            margin-top: 12px;
+
+            @media screen and (max-width: 1280px) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 22px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 18px;
+            }
         }
 
         .title {
@@ -418,12 +474,11 @@
             background-size: cover;
             background-position: center;
 
-            // @media screen and (max-width: 480px) {
-            //   padding: 25px 40px 15px 40px;
-            // }
-            // @media screen and (max-height: 640px) {
-            //   padding: 15px 40px 0px 40px;
-            // }
+            @media screen and (max-width: 768px) {
+                padding: 80px 20px 20px 20px;
+            }
+
+
             .container {
                 height: 100%;
                 padding: 0;
@@ -441,6 +496,14 @@
                         color: $c-turquoise;
                         text-transform: uppercase;
                         font-weight: 600;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 26px;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            font-size: 22px;
+                        }
                     }
 
                     &__descr {
@@ -448,6 +511,21 @@
                         font-size: 16px;
                         line-height: 1.7em;
                         padding: 0 265px;
+
+                        @media screen and (max-width: 1280px) {
+                            padding: 0 170px;
+                        }
+
+                        @media screen and (max-width: 1024px) {
+                            padding: 0 120px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            padding: 0;
+                            width: 100%;
+                            margin: 10px auto 0;
+                            font-size: 14px;
+                        }
                     }
 
 
@@ -859,7 +937,7 @@
                 &:nth-child(odd) {
                     @media screen and (max-width: 1280px) {
                         padding: 0;
-                       
+
                         justify-content: space-between;
                     }
 
@@ -933,7 +1011,7 @@
                     @media screen and (max-width: 1280px) {
                         padding: 0;
                         // flex-wrap: wrap;
-     
+
                         justify-content: space-between;
                     }
 
@@ -1068,6 +1146,7 @@
 
                     @media screen and (max-width: 1280px) {
                         margin-top: 50px;
+
                         @media screen and (max-width: 1024px) {
                             margin-top: 30px;
                         }
