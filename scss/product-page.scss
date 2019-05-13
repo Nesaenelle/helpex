@@ -124,12 +124,14 @@
         .slider {
             width: 100%;
             overflow: hidden;
+
             position: relative;
 
             .product-slide {
                 width: 100%;
                 overflow: hidden;
                 position: relative;
+                height: 100vh;
 
                 &.slick-active {
 
@@ -176,6 +178,9 @@
                     // transform: rotate(17.4deg) translate(0, -25%);
                     z-index: 2;
                     // background: red;
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
 
                 // &:before {
@@ -345,9 +350,14 @@
                 width: 56px;
                 height: 160px;
                 position: absolute;
-                left: 00px;
+                left: 0px;
                 font-size: 0;
                 background: rgba(220, 220, 220, .35);
+
+                @media screen and (max-width: 768px) {
+                    width: 40px;
+                    height: 120px;
+                }
 
                 &:after {
                     content: "";
@@ -360,6 +370,10 @@
 
                     transform: rotate(135deg);
                     -webkit-transform: rotate(135deg);
+
+                    @media screen and (max-width: 768px) {
+                        padding: 6px;
+                    }
                 }
             }
 
@@ -370,6 +384,11 @@
                 right: 0px;
                 font-size: 0;
                 background: rgba(220, 220, 220, .35);
+
+                @media screen and (max-width: 768px) {
+                    width: 40px;
+                    height: 120px;
+                }
 
                 &:after {
                     content: "";
@@ -382,6 +401,10 @@
 
                     transform: rotate(-45deg);
                     -webkit-transform: rotate(-45deg);
+
+                    @media screen and (max-width: 768px) {
+                        padding: 6px;
+                    }
                 }
             }
         }
@@ -412,6 +435,7 @@
 
             @media screen and (max-width: 768px) {
                 padding-top: 80px;
+                width: 100%;
             }
 
             a {
@@ -428,10 +452,19 @@
                 opacity: 0;
                 visibility: hidden;
 
+                @media screen and (max-width: 768px) {
+                    margin-left: 0;
+                    font-size: 14px;
+                }
+
                 img {
                     width: 29px;
                     margin-right: 10px;
                     display: block;
+
+                    @media screen and (max-width: 768px) {
+                        width: 24px;
+                    }
                 }
             }
 
@@ -488,8 +521,12 @@
                     font-size: 98px;
                 }
 
-                @media screen and (max-height: 700px) {
-                    font-size: 98px;
+                @media screen and (max-width: 600px) {
+                    font-size: 84px;
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 72px;
                 }
 
             }
@@ -526,6 +563,11 @@
 
                 opacity: 0;
                 visibility: hidden;
+
+                @media screen and (max-width: 1024px) {
+                    padding-right: 0;
+                    line-height: 1.5em;
+                }
             }
 
             .btn {
@@ -533,6 +575,15 @@
 
                 opacity: 0;
                 visibility: hidden;
+                @media screen and (max-width: 768px) {
+                    max-width: 300px;
+                    padding: 20px;
+                    width: 100%;
+                    text-align: center;
+                }
+                 @media screen and (max-width: 480px) {
+                    margin-top: 30px;
+                 }
             }
         }
 
@@ -543,6 +594,11 @@
             height: 100vh;
 
             // overflow: hidden;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+                // width: 100%;
+            }
 
             .middle-img {
                 position: absolute;
@@ -571,15 +627,17 @@
                 font-weight: 600;
                 // width: 450px;
 
-                 @media screen and (max-width: 1280px) {
+                @media screen and (max-width: 1280px) {
                     font-size: 32px;
-                 }
-                 @media screen and (max-width: 1024px) {
+                }
+
+                @media screen and (max-width: 1024px) {
                     font-size: 28px;
-                 }
-                 @media screen and (max-width: 768px) {
+                }
+
+                @media screen and (max-width: 768px) {
                     font-size: 24px;
-                 }
+                }
             }
 
             .cross-big {
