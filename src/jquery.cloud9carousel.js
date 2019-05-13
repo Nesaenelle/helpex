@@ -92,6 +92,7 @@
 
       if( transform && options.transforms ) {
         style[transform] = "translate(" + x + "px, " + y + "px) scale(" + scale + ")";
+           // scale === 1 ? this.element.classList.add('active') : this.element.classList.remove('active') ;
       } else {
         // Manually resize the gap between the image and its reflection
         if( options.mirror && this.element.tagName === 'IMG' )
@@ -269,6 +270,9 @@
     this.goTo = function( index ) {
       var count = this.items.length;
 
+      this.items.forEach(function(item) { item.element.classList.remove('active')})
+      this.items[index].element.classList.add('active');
+
       // Find the shortest way to rotate item to front
       var diff = index - (this.floatIndex() % count);
 
@@ -353,12 +357,19 @@
 
     var items = $container.find( '.' + options.itemClass );
 
+    
+
     this.finishInit = function() {
       //
       // Wait until all images have completely loaded
       //
       for( var i = 0; i < items.length; i++ ) {
         var item = items[i];
+        if(i === 0) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
         if( (item.tagName === 'IMG') &&
             ((item.width === undefined) || ((item.complete !== undefined) && !item.complete)) )
           return;
