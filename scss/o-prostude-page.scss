@@ -63,6 +63,41 @@
             height: 784px;
             margin-top: 60px;
 
+            &[data-animate="true"] {
+                .symptoms__item {
+                    &:nth-child(1) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 0s;
+                    }
+                    &:nth-child(2) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 0.5s;
+                    }
+                    &:nth-child(3) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 1s;
+                    }
+                    &:nth-child(4) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 1.5s;
+                    }
+                    &:nth-child(5) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 2s;
+                    }
+                    &:nth-child(6) {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 2.5s;
+                    }
+
+                    p {
+                        animation: 1s fadeIn linear;
+                        animation-delay: 3s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+
 
             &__item {
                 position: absolute;
@@ -71,8 +106,27 @@
                 line-height: 1.7em;
                 display: flex;
                 align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                animation-fill-mode: forwards!important;
+
+                &:hover {
+                    .hexagon {                        
+                        color: #fff;
+                        b {
+                            color: #00b2aa;
+                        }
+
+                        &:after {
+                            background: $c-turquoise;
+                        }
+                    }
+                }
+
                 p {
                     // margin-top: -12px;
+                    opacity: 0;
+                    visibility: hidden;
                 }
                 .hexagon {
                     // background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);
@@ -132,8 +186,8 @@
                         bottom: 3%;
                         margin: 0 auto;
                         background: #f9fafc; //url(http://karenmenezes.com/shapes-polygon/bg-cubes.png);
-                        -webkit-transition: all 0.3s linear;
-                        transition: all 0.3s linear;
+                        -webkit-transition: all 0.1s linear;
+                        transition: all 0.1s linear;
                         -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
                         clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
                         -webkit-clip-path: url(#hexagon-clip);
@@ -151,7 +205,7 @@
                         height: 112px;
                         margin-right: 20px;
                         
-                        color: #fff;
+                        // color: #fff;
 
                         &> div {
                             font-size: 12px;
@@ -159,13 +213,13 @@
 
                         b {
                             font-size: 68px;
-                            color: #00b2aa;
+                            // color: #00b2aa;
                             line-height: 0.9em;
                         }
 
-                        &:after {
-                            background: $c-turquoise;
-                        }
+                        // &:after {
+                        //     background: $c-turquoise;
+                        // }
                     }
                 }
 
