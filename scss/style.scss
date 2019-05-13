@@ -119,6 +119,10 @@ main {
         font-size: 28px;
     }
 
+    @media screen and (max-width: 375px) {
+        font-size: 24px;
+    }
+
     &[data-animate="true"] {
         b {
             animation: scaleIn 1.5s;
@@ -126,7 +130,6 @@ main {
         }
     }
 
-    // font-family: 'RALEWAY';
     b {
         opacity: 0;
         visibility: hidden;
