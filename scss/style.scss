@@ -49,6 +49,7 @@ main {
 .breadcrumbs {
     margin-top: 22px;
     width: 100%;
+
     span {
         color: $c-turquoise;
     }
@@ -100,6 +101,23 @@ main {
     font-weight: 600;
     position: relative;
     margin-top: 40px;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 42px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 36px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 28px;
+    }
 
     &[data-animate="true"] {
         b {
@@ -171,9 +189,10 @@ main {
         width: 100%;
         margin-bottom: 53px;
         position: relative;
+
         &:after {
             content: '';
-            left: 0; 
+            left: 0;
             width: 5px;
             position: absolute;
             height: 18px;
@@ -188,8 +207,10 @@ main {
         width: calc(49% + 5px);
     }
 
-    .input, .textarea{
+    .input,
+    .textarea {
         position: relative;
+
         img {
             position: absolute;
             left: 30px;
@@ -198,18 +219,21 @@ main {
             margin: auto;
             width: 27px;
         }
-        & + .input {
+
+        &+.input {
             margin-top: 21px;
         }
     }
 
     .textarea {
         width: calc(49% + 5px);
+
         textarea {
             width: 100%;
             display: block;
             height: 100%;
         }
+
         img {
             top: 20px;
             bottom: auto;
