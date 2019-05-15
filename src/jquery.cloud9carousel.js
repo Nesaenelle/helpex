@@ -148,6 +148,7 @@
     this.onLoaded = options.onLoaded;
     this.onRendered = options.onRendered;
     this.onAnimationFinished = options.onAnimationFinished;
+    this.onAnimationStart = options.onAnimationStart;
 
     this.itemOptions = {
       transforms: options.transforms
@@ -264,6 +265,7 @@
     //
     this.go = function( count ) {
       this.destRotation += (2 * Math.PI / this.items.length) * count;
+      this.onAnimationStart && this.onAnimationStart(this);
       this.play();
     }
 

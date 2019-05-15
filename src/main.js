@@ -3,7 +3,6 @@ $(document).ready(function() {
     $(".slider-for").on("beforeChange", function(event, slider, slideIndex, nextSlide) {
         var curSlide = slider.$slides[nextSlide]
         // changeSliderInfo(curSlide);
-        console.log(curSlide);
 
         // setTimeout(function() {
         $('body').attr('data-theme', (nextSlide + 1));
@@ -97,6 +96,10 @@ $(document).ready(function() {
               var index = carousel.nearestIndex();
               $('.slider-for').slick('slickGoTo', index);
             }
+            // onAnimationStart: function(carousel) {
+            //   var index = carousel.nearestIndex();
+            //   $('.slider-for').slick('slickGoTo', index);
+            // }
         });
     }
 
