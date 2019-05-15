@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    $('body').fadeIn(1000);
     $(".slider-for").on("beforeChange", function(event, slider, slideIndex, nextSlide) {
         var curSlide = slider.$slides[nextSlide]
         // changeSliderInfo(curSlide);
