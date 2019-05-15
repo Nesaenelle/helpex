@@ -220,7 +220,7 @@
                         font-size: 32px;
                         color: #eaf0f0;
                         font-family: 'circe';
-
+                        // font-weight: 600;
                     }
 
 
@@ -845,6 +845,7 @@
                     position: relative;
                     top: 8px;
                     text-align: center;
+                    font-weight: 600;
 
                     @media screen and (max-width: 1024px) {
                         font-size: 86px;

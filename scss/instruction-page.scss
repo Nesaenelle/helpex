@@ -23,6 +23,7 @@
             color: #f7f7f7;
             z-index: -1;
             font-family: 'circe';
+            font-weight: 600;
             transform: rotate(-90deg);
             bottom: 624px;
             right: -505px;
@@ -37,6 +38,7 @@
                 border-top: 0;
                 cursor: pointer;
                 position: relative;
+                transition: 0.1s;
 
                 &:after {
                     content: "";
@@ -59,7 +61,7 @@
                     -webkit-transform: rotate(-45deg);
                 }
 
-                &.active {
+                &.active, &:hover{
                     border-color: $c-turquoise;
                     background: $c-turquoise;
                     color: #fff;

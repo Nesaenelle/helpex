@@ -211,7 +211,7 @@
         self.pause();
 
         if( typeof self.onAnimationFinished === 'function' )
-          self.onAnimationFinished();
+          self.onAnimationFinished(self);
       } else {
         // Asymptotically approach the destination
         self.rotation = self.destRotation - rem / (1 + (self.speed * dt));
