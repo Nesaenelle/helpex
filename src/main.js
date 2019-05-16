@@ -103,4 +103,15 @@ $(document).ready(function() {
         });
     }
 
+    $('.cloud9-item a').on('click', function(e) {
+        e.preventDefault();
+        var index = $(e.target).data('slide');
+          if($(e.target).parent().hasClass('active')) {
+              // window.open(e.target.href);
+              window.location.href = e.target.href;
+          } else {
+              $('.slider-for').slick('slickGoTo', index - 1);
+          }
+    });
+
 })
