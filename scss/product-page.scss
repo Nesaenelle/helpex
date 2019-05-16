@@ -262,6 +262,11 @@
 
                     .btn-product {
                         background: $c-red;
+                        &:hover {
+                            color: $c-red;
+                            background: none;
+                            border-color: $c-red;
+                        }
                     }
 
                     .circle {
@@ -290,6 +295,11 @@
 
                     .btn-product {
                         background: $c-turquoise;
+                        &:hover {
+                            color: $c-turquoise;
+                            background: none;
+                            border-color: $c-turquoise;
+                        }
                     }
 
                     .middle-img {
@@ -313,6 +323,11 @@
 
                     .btn-product {
                         background: $c-crimson;
+                        &:hover {
+                            color: $c-crimson;
+                            background: none;
+                            border-color: $c-crimson;
+                        }
                     }
 
                     .middle-img {
@@ -342,6 +357,11 @@
 
                     .btn-product {
                         background: $c-dark-blue;
+                        &:hover {
+                            color: $c-dark-blue;
+                            background: none;
+                            border-color: $c-dark-blue;
+                        }
                     }
 
                     .middle-img {
@@ -371,6 +391,11 @@
 
                     .btn-product {
                         background: $c-orange;
+                        &:hover {
+                            color: $c-orange;
+                            background: none;
+                            border-color: $c-orange;
+                        }
                     }
                 }
             }
