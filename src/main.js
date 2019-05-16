@@ -44,7 +44,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
-            arrows: false,
+            arrows: true,
             infinite: true,
             centerMode: true,
             accessibility: false,

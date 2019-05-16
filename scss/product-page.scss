@@ -48,12 +48,12 @@
             .burger {
                 span {
                     @media screen and (max-width: 768px) {
-                         background: $c-red;
-    
-                          &:after,
-                          &:before {
-                              background: $c-red;
-                          }      
+                        background: $c-red;
+
+                        &:after,
+                        &:before {
+                            background: $c-red;
+                        }
                     }
 
                 }
@@ -75,12 +75,12 @@
             .burger {
                 span {
                     @media screen and (max-width: 768px) {
-                         background: $c-turquoise;
-            
-                          &:after,
-                          &:before {
-                              background: $c-turquoise;
-                          }      
+                        background: $c-turquoise;
+
+                        &:after,
+                        &:before {
+                            background: $c-turquoise;
+                        }
                     }
 
                 }
@@ -102,12 +102,12 @@
             .burger {
                 span {
                     @media screen and (max-width: 768px) {
-                         background: $c-crimson;
-            
-                          &:after,
-                          &:before {
-                              background: $c-crimson;
-                          }      
+                        background: $c-crimson;
+
+                        &:after,
+                        &:before {
+                            background: $c-crimson;
+                        }
                     }
 
                 }
@@ -129,12 +129,12 @@
             .burger {
                 span {
                     @media screen and (max-width: 768px) {
-                         background: $c-dark-blue;
-            
-                          &:after,
-                          &:before {
-                              background: $c-dark-blue;
-                          }      
+                        background: $c-dark-blue;
+
+                        &:after,
+                        &:before {
+                            background: $c-dark-blue;
+                        }
                     }
 
                 }
@@ -156,12 +156,12 @@
             .burger {
                 span {
                     @media screen and (max-width: 768px) {
-                         background: $c-orange;
-            
-                          &:after,
-                          &:before {
-                              background: $c-orange;
-                          }      
+                        background: $c-orange;
+
+                        &:after,
+                        &:before {
+                            background: $c-orange;
+                        }
                     }
 
                 }
@@ -196,14 +196,14 @@
                     }
 
                     .product-subtitle {
-                        animation: fadeIn 2s, type 6s steps(200, end) ;
+                        animation: fadeIn 2s, type 6s steps(200, end);
                         animation-delay: 0.5s;
                         animation-fill-mode: forwards;
                     }
 
                     .product-text,
                     .btn,
-                    a[download]{
+                    a[download] {
                         animation: 1s fadeIn ease-in-out;
                         animation-delay: 1.5s;
                         animation-fill-mode: forwards;
@@ -232,6 +232,7 @@
                     right: calc(0%);
                     // transform: rotate(17.4deg) translate(0, -25%);
                     z-index: 2;
+
                     // background: red;
                     @media screen and (max-width: 768px) {
                         display: none;
@@ -262,6 +263,7 @@
 
                     .btn-product {
                         background: $c-red;
+
                         &:hover {
                             color: $c-red;
                             background: none;
@@ -295,6 +297,7 @@
 
                     .btn-product {
                         background: $c-turquoise;
+
                         &:hover {
                             color: $c-turquoise;
                             background: none;
@@ -323,6 +326,7 @@
 
                     .btn-product {
                         background: $c-crimson;
+
                         &:hover {
                             color: $c-crimson;
                             background: none;
@@ -357,6 +361,7 @@
 
                     .btn-product {
                         background: $c-dark-blue;
+
                         &:hover {
                             color: $c-dark-blue;
                             background: none;
@@ -391,6 +396,7 @@
 
                     .btn-product {
                         background: $c-orange;
+
                         &:hover {
                             color: $c-orange;
                             background: none;
@@ -420,8 +426,8 @@
                 align-items: center;
                 // border-radius:
                 z-index: 1;
-                
-              
+
+
                 animation: fadeinout 4s linear forwards;
 
                 &:hover {
@@ -456,6 +462,7 @@
 
                     @media screen and (max-width: 768px) {
                         padding: 6px;
+     
                     }
                 }
             }
@@ -487,6 +494,8 @@
 
                     @media screen and (max-width: 768px) {
                         padding: 6px;
+                        border: solid #000;
+                        border-width: 0 1px 1px 0;
                     }
                 }
             }
@@ -500,6 +509,10 @@
             display: flex;
             align-items: center;
             position: relative;
+
+            @media screen and (max-width: 768px) {
+                padding: 0 50px;
+            }
         }
 
         .left-side {
@@ -521,7 +534,7 @@
                 width: 100%;
             }
 
-            a[download]{
+            a[download] {
                 text-decoration: underline;
                 text-transform: uppercase;
                 font-size: 16px;
@@ -564,7 +577,6 @@
                 line-height: 0.9em;
                 left: -168px;
 
-                // text-indent: -0.28em;
                 @media screen and (max-width: 1280px) {
                     font-size: 500px;
                     left: -90px;
@@ -577,8 +589,13 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 300px;
+                    font-size: 380px;
+                    line-height: 1em;
                     left: -50px;
+                }
+
+                @media screen and (max-height: 600px) {
+                    font-size: 300px;
                 }
             }
 
@@ -603,19 +620,20 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 98px;
+                    font-size: 140px;
                 }
 
                 @media screen and (max-width: 600px) {
-                    font-size: 84px;
+                    font-size: 98px;
                 }
 
-                @media screen and (max-height:  600px) {
-                    font-size: 48px;
-                }
 
                 @media screen and (max-width: 480px) {
                     font-size: 72px;
+                }
+
+                @media screen and (max-height: 600px) {
+                    font-size: 48px;
                 }
 
             }
@@ -660,9 +678,17 @@
                     line-height: 1.5em;
                 }
 
-                   @media screen and (max-height:  600px) {
-                    line-height: 1.2em;
-                   }
+                @media screen and (max-width: 768px) {
+                    line-height: 2em;
+                }
+
+                @media screen and (max-width: 480px) {
+                    line-height: 1.7em;
+                }
+
+                @media screen and (max-height: 600px) {
+                    line-height: 1.4em;
+                }
             }
 
             .btn {
@@ -670,18 +696,25 @@
 
                 opacity: 0;
                 visibility: hidden;
+
                 @media screen and (max-width: 768px) {
                     max-width: 300px;
                     padding: 16px;
                     width: 100%;
                     text-align: center;
                 }
-                @media screen and (max-height:  600px) {
+
+                @media screen and (max-height: 600px) {
                     margin-top: 30px;
                 }
-                 @media screen and (max-width: 480px) {
-                    margin-top: 30px;
-                 }
+
+                @media screen and (max-width: 480px) {
+                    margin: 30px auto 0;
+                    display: block;
+                    max-width: 240px;
+                    font-size: 12px;
+                    padding: 12px 20px
+                }
             }
         }
 
@@ -712,10 +745,11 @@
                 position: absolute;
                 left: -149px;
                 z-index: -2;
+
                 @media screen and (max-width: 1280px) {
                     transform: scale(0.7);
                 }
-              
+
             }
 
             .bottom-text {
@@ -777,11 +811,25 @@
 }
 
 @keyframes fadeinout {
-  0%,{ opacity: 1; }
-  10% {opacity: 1;}
-  18% { opacity: 0; }
-  30% {opacity: 1;}
-  100% {
-    opacity: 1;
-  }
+
+    0%,
+        {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

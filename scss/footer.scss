@@ -110,6 +110,18 @@ footer {
             // @media screen and (max-width: 1024px) {
             // flex-wrap:wrap;
             // }
+
+            .copyright {
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    order: 1;
+                }
+            }
+            .policy {
+                @media screen and (max-width: 768px) {
+                    order: 2;
+                }
+            }
         }
 
         &>div:last-child {}
@@ -157,6 +169,9 @@ footer {
             margin: 20px auto;
             padding: 13px 30px 14px;
             font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 10px auto 20px;
         }
     }
 }

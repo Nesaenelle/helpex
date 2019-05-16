@@ -7,6 +7,11 @@
             padding-bottom: 70px;
         }
 
+        @media screen and (max-width: 768px) {
+            padding-bottom: 50px;
+        }
+
+
         .map-wrapper {
             position: relative;
 
@@ -89,6 +94,10 @@
 
         .btn-supplier {
             margin: 51px auto 0;
+
+            @media screen and (max-width: 768px) {
+                margin: 40px auto 0;
+            }
         }
 
         .contact-form {

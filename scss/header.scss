@@ -344,9 +344,9 @@ header {
                 width: 100%;
                 justify-content: center;
                 display: flex;
-
+                margin: 4px 0;
                 a {
-                    padding: 14px 14px;
+                    padding: 10px 14px;
 
                     @media screen and (max-width: 480px) {
                         font-size: 14px;

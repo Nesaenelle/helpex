@@ -651,6 +651,76 @@
                     }
                 }
 
+                .slick-next,
+                .slick-prev {
+                    border: none;
+                    top: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    outline: none;
+                    transition: 0.1s;
+                    bottom: 34px;
+                    top: 0;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .slick-prev {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    left: 0px;
+                    font-size: 0;
+                    background: $c-turquoise;
+
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        border: solid #fff;
+                        border-width: 0 1px 1px 0;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-left: 5px;
+
+                        transform: rotate(135deg);
+                        -webkit-transform: rotate(135deg);
+
+                    }
+                }
+
+                .slick-next {
+
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    right: 0px;
+                    font-size: 0;
+                    background: $c-turquoise;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        border: solid #fff;
+                        border-width: 0 1px 1px 0;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-left: -5px;
+
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+
+                }
+
 
             }
 
@@ -977,76 +1047,10 @@
 
             }
 
-            // .slick-prev,
-            // .slick-next {
-            //     border: none;
-            //     top: 0;
-            //     bottom: 0;
-            //     cursor: pointer;
-            //     outline: none;
-            //     transition: 0.1s;
-            //     bottom: 34px;
-            //     top: 0;
-            //     margin: auto;
-            //     display: flex;
-            //     justify-content: center;
-            //     align-items: center;
-            //     border-radius: 100%;
 
-            //     &:hover {
-            //         transform: scale(1.05);
-            //     }
-            // }
-
-            // .slick-prev.slick-arrow {
-            //     width: 68px;
-            //     height: 68px;
-            //     position: absolute;
-            //     left: -69px;
-            //     font-size: 0;
-            //     background: $c-turquoise;
-
-            //     &:after {
-            //         content: "";
-            //         display: block;
-            //         border: solid #fff;
-            //         border-width: 0 3px 3px 0;
-            //         display: inline-block;
-            //         padding: 7px;
-            //         margin-left: 5px;
-
-            //         transform: rotate(135deg);
-            //         -webkit-transform: rotate(135deg);
-            //     }
-            // }
-
-            // .slick-next.slick-arrow {
-            //     width: 68px;
-            //     height: 68px;
-            //     position: absolute;
-            //     right: -69px;
-            //     font-size: 0;
-            //     background: $c-turquoise;
-
-            //     &:after {
-            //         content: "";
-            //         display: block;
-            //         border: solid #fff;
-            //         border-width: 0 3px 3px 0;
-            //         display: inline-block;
-            //         padding: 7px;
-            //         margin-left: -5px;
-
-            //         transform: rotate(-45deg);
-            //         -webkit-transform: rotate(-45deg);
-            //     }
-            // }
         }
 
-        // .text-slider {
-
-        // }
-
+ 
 
         .text-slider {
             margin-top: 90px;

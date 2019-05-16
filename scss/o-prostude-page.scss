@@ -110,6 +110,11 @@
 
             &[data-animate="true"] {
                 .symptoms__item {
+                   @media screen and (max-width: 768px) {
+                        animation: none!important;
+                        opacity: 1;
+                        visibility: visible;
+                   }
                     &:nth-child(1) {
                         animation: 0.5s fadeIn ease-in-out;
                         animation-delay: 0s;
@@ -144,6 +149,11 @@
                         animation: 0.5s fadeIn ease-in-out;
                         animation-delay: 3s;
                         animation-fill-mode: forwards;
+                        @media screen and (max-width: 768px) {
+                             animation: none!important;
+                             opacity: 1;
+                             visibility: visible;
+                        }
                     }
                 }
             }
@@ -197,6 +207,7 @@
                     align-items: center;
                     justify-content: center;
                     position: relative;
+                    overflow: hidden;
 
                     &>div {
                         position: relative;
@@ -204,7 +215,6 @@
                         text-align: center;
                         font-weight: 600;
                         text-transform: uppercase;
-
                     }
 
                     b {
@@ -220,10 +230,7 @@
                         font-size: 32px;
                         color: #eaf0f0;
                         font-family: 'circe';
-                        // font-weight: 600;
                     }
-
-
 
                     // display: block;
                     position: relative;
@@ -271,9 +278,9 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                         width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        //  width: 100%;
                     }
 
 
@@ -333,10 +340,10 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                        top: 90px;
-                         width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        // top: 90px;
+                        //  width: 100%;
                     }
 
                     .hexagon {
@@ -389,10 +396,10 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                        top: 200px;
-                        width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        // top: 200px;
+                        // width: 100%;
                     }
 
                     .hexagon {
@@ -436,10 +443,10 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                        top: 330px;
-                        width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        // top: 330px;
+                        // width: 100%;
                     }
 
                     .hexagon {
@@ -506,10 +513,10 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                        top: 490px;
-                        width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        // top: 490px;
+                        // width: 100%;
                     }
 
                     .hexagon {
@@ -555,10 +562,10 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        left: 0;
-                        right: 0;
-                        top: 610px;
-                        width: 100%;
+                        // left: 0;
+                        // right: 0;
+                        // top: 610px;
+                        // width: 100%;
                     }
 
 

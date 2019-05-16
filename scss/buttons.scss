@@ -74,6 +74,11 @@
         justify-content: center;
         position: relative;
 
+        @media screen and (max-width: 768px) {
+            padding: 13px 25px 14px 25px;
+            font-size: 16px;
+        }
+
         a {
             position: absolute;
             left: 0;
@@ -128,6 +133,7 @@
         letter-spacing: 1px;
         position: relative;
         text-align: left;
+
         a {
             position: absolute;
             left: 0;
