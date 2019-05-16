@@ -160,7 +160,7 @@
         var map;
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 50.4203253, lng: 30.4715925 },
+                center: { lat: 50.4202, lng: 30.4725 },
                 zoom: 17,
                 disableDefaultUI: true,
                 scaleControl: false,
@@ -168,11 +168,19 @@
                 draggable: false
             });
 
-/*            var marker = new google.maps.Marker({
-                position: { lat: 50.4203253, lng: 30.4715925  },
+            var icon = {
+                url: "img/marker.svg", // url
+                scaledSize: new google.maps.Size(36, 36), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(15, 35) // anchor
+            };
+
+            var marker = new google.maps.Marker({
+                position: { lat: 50.4202, lng: 30.4725  },
                 map: map,
-                title: 'Hello World!'
-            });*/
+                title: 'Hello World!',
+                icon: icon
+            });
         }
 
         $('.phone-number').on('click', function () {
