@@ -628,15 +628,19 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 140px;
+                    font-size: 148px;
                 }
 
                 @media screen and (max-width: 600px) {
-                    font-size: 98px;
+                    font-size: 108px;
                 }
 
 
                 @media screen and (max-width: 480px) {
+                    font-size: 82px;
+                }
+
+                @media screen and (max-width: 375px) {
                     font-size: 72px;
                 }
 
