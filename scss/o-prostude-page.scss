@@ -108,13 +108,22 @@
             height: 784px;
             margin-top: 60px;
 
+            @media screen and (max-width: 1440px) {
+                height: 650px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                height: 600px;
+            }
+
             &[data-animate="true"] {
                 .symptoms__item {
-                   @media screen and (max-width: 768px) {
-                        animation: none!important;
+                    @media screen and (max-width: 768px) {
+                        animation: none !important;
                         opacity: 1;
                         visibility: visible;
-                   }
+                    }
+
                     &:nth-child(1) {
                         animation: 0.5s fadeIn ease-in-out;
                         animation-delay: 0s;
@@ -149,10 +158,11 @@
                         animation: 0.5s fadeIn ease-in-out;
                         animation-delay: 3s;
                         animation-fill-mode: forwards;
+
                         @media screen and (max-width: 768px) {
-                             animation: none!important;
-                             opacity: 1;
-                             visibility: visible;
+                            animation: none !important;
+                            opacity: 1;
+                            visibility: visible;
                         }
                     }
                 }
@@ -412,6 +422,7 @@
                             min-width: 120px;
                             height: 120px;
                         }
+
                         @media screen and (max-width: 768px) {
                             margin-left: 0;
                         }
@@ -431,14 +442,14 @@
 
                     @media screen and (max-width: 1440px) {
                         right: 0px;
-                        left:  -560px;
+                        left: -560px;
                         margin: auto;
                         top: 240px;
                         width: 440px;
                     }
 
                     @media screen and (max-width: 1024px) {
-                        left:  -400px;
+                        left: -400px;
                         width: 360px;
                     }
 
@@ -489,6 +500,7 @@
                         font-size: 148px;
                         line-height: 0.5em;
                         color: #ebeff0;
+
                         @media screen and (max-width: 1440px) {
                             font-size: 120px;
                         }
@@ -503,13 +515,13 @@
                     @media screen and (max-width: 1440px) {
                         top: 350px;
                         right: 0px;
-                        left:  220px;
+                        left: 220px;
                         margin: auto;
                     }
 
                     @media screen and (max-width: 1024px) {
                         width: 400px;
-                        left:  260px;
+                        left: 260px;
                     }
 
                     @media screen and (max-width: 768px) {
@@ -551,7 +563,7 @@
                     @media screen and (max-width: 1440px) {
                         top: 450px;
                         right: 460px;
-                        left:  0;
+                        left: 0;
                         margin: auto;
                         width: 400px;
                     }
@@ -615,6 +627,7 @@
 
             &.desktop {
                 display: block;
+
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
@@ -622,6 +635,7 @@
 
             &.mobile {
                 display: none;
+
                 @media screen and (max-width: 768px) {
                     display: block;
                 }
@@ -753,6 +767,7 @@
                     @media screen and (max-width: 768px) {
                         margin-top: 7px;
                     }
+
                     @media screen and (max-width: 480px) {
                         font-size: 13px;
                     }
