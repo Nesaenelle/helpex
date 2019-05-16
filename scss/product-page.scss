@@ -530,7 +530,7 @@
             }
 
             @media screen and (max-width: 768px) {
-                padding-top: 80px;
+                padding-top: 40px;
                 width: 100%;
             }
 
@@ -589,12 +589,20 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 380px;
-                    line-height: 1em;
+                    font-size: 420px;
+                    line-height: 0.8em;
                     left: -50px;
                 }
 
+                @media screen and (max-width: 600px) {
+                    font-size: 360px;
+                }
+
                 @media screen and (max-height: 600px) {
+                    font-size: 300px;
+                }
+
+                @media screen and (max-width: 375px) {
                     font-size: 300px;
                 }
             }
@@ -659,7 +667,11 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    font-size: 20px;
+                    font-size: 24px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
                 }
             }
 
@@ -689,6 +701,10 @@
                 @media screen and (max-height: 600px) {
                     line-height: 1.4em;
                 }
+
+                @media screen and (max-width: 375px) {
+                    line-height: 1.25em;
+                }   
             }
 
             .btn {
