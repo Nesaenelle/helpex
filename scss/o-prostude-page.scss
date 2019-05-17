@@ -115,9 +115,11 @@
 
             @media screen and (max-width: 1024px) {
                 height: 600px;
+                margin-left: 20px;
             }
 
             @media screen and (max-width: 767px) {
+                margin-left: 0px;
                 height: auto;
                 // height: 580px;
                 // transform: scale(0.8);
