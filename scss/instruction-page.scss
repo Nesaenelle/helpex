@@ -99,13 +99,15 @@
 
         .header {
             font-weight: 600;
-            font-size: 22px;
             position: relative;
             padding-left: 20px;
             width: 100%;
             letter-spacing: 1.3px;
+            font-family: 'CRC65', sans-serif;
+            line-height: 1em;
+            font-size: 26px;
             @media screen and (max-width: 768px) {
-                font-size: 18px;
+                font-size: 22px;
             }
 
             &:after {
@@ -166,7 +168,7 @@
             }
 
             .header {
-                margin-top: -3px;
+                margin-top: 0px;
             }
 
             p {
@@ -189,6 +191,7 @@
                 margin-left: 14px;
                 display: flex;
                 align-items: center;
+                font-family: 'CRC65', sans-serif;
 
                 img {
                     width: 40px;
@@ -206,10 +209,11 @@
 
             b {
                 width: 100%;
-                font-size: 14px;
+                font-size: 16px;
                 display: block;
                 margin-top: 25px;
                 margin-left: 20px;
+                font-family: 'CRC65', sans-serif;
 
                 &~b {
                     margin-top: 22px;

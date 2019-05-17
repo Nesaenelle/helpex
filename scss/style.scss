@@ -188,14 +188,15 @@ main {
 
     &__title {
         font-weight: 600;
-        font-size: 22px;
+        font-size: 26px;
         padding-left: 21px;
         letter-spacing: 1.1px;
         width: 100%;
         margin-bottom: 53px;
         position: relative;
+        font-family: 'CRC65', sans-serif;
         @media screen and (max-width: 1024px) {
-            font-size: 18px;
+            font-size: 22px;
             margin-bottom: 30px;
             order: 0;
         }
@@ -291,7 +292,7 @@ main {
         margin-top: 23px;
         @media screen and (max-width: 768px) {
             padding: 18px 60px;
-            font-size: 14px;
+            font-size: 20px;
         }
         @media screen and (max-width: 480px) {
             margin-top: 14px;
@@ -309,6 +310,7 @@ main {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.8px;
+    font-family: 'CRC65', sans-serif;
 }
 
 [data-animate] {
