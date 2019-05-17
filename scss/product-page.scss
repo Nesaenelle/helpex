@@ -428,7 +428,7 @@
                 z-index: 1;
 
 
-                animation: fadeinout 4s linear forwards;
+                animation: fadeinout 3s infinite linear forwards;
 
                 &:hover {
                     transform: scale(1.05);
@@ -689,6 +689,7 @@
 
                 opacity: 0;
                 visibility: hidden;
+                font-family: "AvantGardeCTT", sans-serif;
 
                 @media screen and (max-width: 1024px) {
                     padding-right: 0;

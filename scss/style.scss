@@ -16,6 +16,10 @@
 
 
 body {
+    font-family: 'CRC65',sans-serif;
+}
+
+p {
     font-family: "AvantGardeCTT", sans-serif;
 }
 
@@ -103,6 +107,7 @@ main {
     font-weight: 600;
     position: relative;
     margin-top: 40px;
+    font-family: "AvantGardeCTT", sans-serif;
 
     @media screen and (max-width: 1280px) {
         font-size: 42px;

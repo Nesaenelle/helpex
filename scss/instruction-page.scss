@@ -102,7 +102,7 @@
             position: relative;
             padding-left: 20px;
             width: 100%;
-            letter-spacing: 1.3px;
+            letter-spacing: 0.3px;
             font-family: 'CRC65', sans-serif;
             line-height: 1em;
             font-size: 26px;
@@ -290,6 +290,7 @@
                         font-size: 14px;
                         padding: 11px 0 0 55px;
                         position: relative;
+                        font-family: "AvantGardeCTT", sans-serif;
 
                         &:after {
                             content: "";
@@ -324,6 +325,7 @@
                         text-indent: 55px;
                         line-height: 1.95em;
                         position: relative;
+                         font-family: "AvantGardeCTT", sans-serif;
 
                         &:after {
                             content: '';
