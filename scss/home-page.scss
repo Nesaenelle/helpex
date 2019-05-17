@@ -7,6 +7,10 @@
             }
         }
 
+        .modal-close {
+            fill: $c-red;
+        }
+
         .btn-order, .btn-contact{
             background: $c-red;
             border-color: $c-red;
@@ -83,6 +87,10 @@
             }
         }
 
+        .modal-close {
+            fill: $c-turquoise;
+        }
+
         .btn-order, .btn-contact{
             background: $c-turquoise;
             border-color: $c-turquoise;
@@ -157,6 +165,10 @@
             img:nth-child(3) {
                 display: block;
             }
+        }
+
+        .modal-close {
+            fill: $c-crimson;
         }
 
         .btn-order, .btn-contact{
@@ -236,6 +248,10 @@
             }
         }
 
+        .modal-close {
+            fill: $c-dark-blue;
+        }
+
         .btn-order, .btn-contact{
             background: $c-dark-blue;
             border-color: $c-dark-blue;
@@ -310,6 +326,10 @@
             img:nth-child(5) {
                 display: block;
             }
+        }
+
+        .modal-close {
+            fill: $c-orange;
         }
 
         .btn-order,.btn-contact{
