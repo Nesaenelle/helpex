@@ -1,31 +1,45 @@
-function closeModal() {
-    var overlay = $('.modal-overlay');
-    $('.modal').removeClass('opened');
-    overlay.removeClass('opened');
-}
+(function() {
+    function closeModal() {
+        var overlay = $('.modal-overlay');
+        $('.modal').removeClass('opened');
+        overlay.removeClass('opened');
+    }
 
-function openModal(e) {
-    var $target = $(e.currentTarget);
-    var id = $target.data('modal');
-    var modal = $('[data-modal-id="'+id+'"]');
-    var overlay = $('.modal-overlay');
+    function openModal(e) {
+        if(e.target) {
+            var $target = $(e.currentTarget);
+            var id = $target.data('modal');
+        } else {
+            var id = e;
+        }
 
-    modal.addClass('opened');
-    overlay.addClass('opened');
-}
+        var modal = $('[data-modal-id="'+id+'"]');
+        var overlay = $('.modal-overlay');
 
-$('[data-close-btn]').on('click', function () {
-    closeModal();
-});
+        modal.addClass('opened');
+        overlay.addClass('opened');
+    }
 
-$('.modal-close').on('click', function () {
-    closeModal();
-});
+    $('[data-close-btn]').on('click', function () {
+        closeModal();
+    });
 
-$('.modal-overlay').on('click', function () {
-    closeModal();
-});
+    $('.modal-close').on('click', function () {
+        closeModal();
+    });
 
-$('[data-modal]').on('click', function (e) {
-    openModal(e);
-});
+    $('.modal-overlay').on('click', function () {
+        closeModal();
+    });
+
+    $('[data-modal]').on('click', function (e) {
+        openModal(e);
+    });
+
+    $('#modal-form').on('submit', function(e) {
+        e.preventDefault();
+        closeModal();
+        openModal('modal-thanks');
+    });
+
+})();
