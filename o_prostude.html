@@ -305,7 +305,7 @@
             <div>
                 <div class="copyright">Все права принадлежат Хелпекс, 2018</div>
                 <a href="" class="policy">Политика конфиденциальности</a>
-                <button class="btn btn-order">Оставить заявку</button>
+                <button class="btn btn-order" data-modal="modal-application">Оставить заявку</button>
             </div>
             <div class="designed">
                 разработано <a href="https://fairtech-marketing.com.ua/" target="_blank">fairtech.marketing</a>
@@ -319,35 +319,48 @@
             </clipPath>
         </defs>
     </svg>
-    <!-- <div class="modal-overlay"></div> -->
-    <!--     <div class="modal" data-modal-id="modal-adolescence">
+    <div class="modal-overlay"></div>
+    <div class="modal" data-modal-id="modal-application">
         <div class="modal-body">
-            <div class="modal-close">X</div>
-            <form id="adolescence-form">
-                <div class="top-block">
-                    <div class="title">Вы достигли совершеннолетия?</div>
-                    <div class="buttons">
-                        <button class="btn btn-modal-small" type="button" data-close-btn>НЕТ</button>
-                        <button class="btn btn-modal-small" type="submit">ДА</button>
+            <div class="modal-close">
+                <svg id="close-btn" height="357px" viewBox="0 0 357 357" >
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                            214.2,178.5"/>
+                </svg>
+            </div>
+            <form class="contact-form" id="modal-form">
+                <div class="modal-title">Оставить заявку</div>
+                <div class="contact-form__inputs">
+                    <div class="input">
+                        <input type="text" placeholder="Ваше имя" required>
                     </div>
-                    <label class="checkbox">
-                        <input type="checkbox" name="save" value="true">
-                        <span class="checkbox__icon"></span>
-                        Запомнить меня
-                    </label>
-                </div>
-                <div class="modal-language">
-                    <label class="modal-language__item active"><input type="radio" name="lang" checked value="urk">
-                        UKR</label>
-                    <label class="modal-language__item"><input type="radio" name="lang" value="eng">ENG</label>
-                    <label class="modal-language__item"><input type="radio" name="lang" value="ru">RU</label>
+                    <div class="input">
+                        <input type="text" placeholder="Ваш телефон" required>
+                    </div>
+                    <button type="submit" class="btn btn-contact">Оставить заявку</button>
                 </div>
             </form>
         </div>
-    </div> -->
+    </div>
+    <div class="modal" data-modal-id="modal-thanks">
+        <div class="modal-body">
+            <div class="modal-close">
+                <svg id="close-btn" height="357px" viewBox="0 0 357 357" >
+                    <polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+                            214.2,178.5"/>
+                </svg>
+            </div>
+            <div class="modal-title">Спасибо за заявку</div>
+            <div class="modal-text">
+                Наш менеджер свяжеться с Вами в течении <br>
+                15 минут ожидайте звонка
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="src/menu.js"></script>
+    <script src="src/modal.js"></script>
     <script src="src/animate.js"></script>
     <script src="src/o-prostude.js"></script>
 </body>
