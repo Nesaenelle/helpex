@@ -1,0 +1,421 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "buttons.scss";
+@import "fonts.scss";
+@import "modal.scss";
+@import "home-page.scss";
+@import "contacts-page.scss";
+@import "question-page.scss";
+@import "you-should-know.scss";
+@import "instruction-page.scss";
+@import "o-prostude-page.scss";
+@import "product-page.scss";
+@import "themes.scss";
+
+
+body {
+    font-family: 'CRC65',sans-serif;
+}
+
+p {
+    font-family: "AvantGardeCTT", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1470px;
+    min-width: 300px;
+    margin: auto;
+    padding: 0 40px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 20px;
+    }
+    // @media screen and (max-width: 375px) { 
+    //     padding: 0 10px;
+    // }
+}
+
+main {
+    width: 100%;
+    min-height: calc(100% - 215px);
+    padding-top: 100px;
+    padding-bottom: 70px;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 50px;
+    }
+
+}
+
+.breadcrumbs {
+    margin-top: 22px;
+    width: 100%;
+    @media screen and (max-width: 1024px) {
+        margin-top: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 18px;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 10px;
+    }
+    span {
+        color: $c-turquoise;
+    }
+
+    &__item {
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 0.2px;
+
+        span {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        &:after {
+            content: "|";
+            margin: 0 3px 0 7px;
+        }
+
+        &:last-child {
+            &:after {
+                content: none;
+            }
+        }
+    }
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    color: #454545;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin-top: 40px;
+    font-family: "AvantGardeCTT", sans-serif;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 42px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 36px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 24px;
+    }
+
+    &[data-animate="true"] {
+        b {
+            animation: scaleIn 1.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    b {
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+    }
+
+    span {
+        height: 3px;
+        width: 90px;
+        background: $c-turquoise;
+        position: relative;
+        margin: 20px auto 0;
+        display: block;
+
+
+        &:after,
+        &:before {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            right: 0;
+            margin: -3px auto 0;
+        }
+
+        &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: #fff;
+            border-width: 12px;
+        }
+
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: $c-turquoise;
+            border-width: 16px;
+        }
+    }
+}
+
+.slick-slide {
+    outline: none;
+}
+
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__title {
+        font-weight: 600;
+        font-size: 26px;
+        padding-left: 21px;
+        letter-spacing: 1.1px;
+        width: 100%;
+        margin-bottom: 53px;
+        position: relative;
+        font-family: 'CRC65', sans-serif;
+        @media screen and (max-width: 1024px) {
+            font-size: 22px;
+            margin-bottom: 30px;
+            order: 0;
+        }
+        &:after {
+            content: '';
+            left: 0;
+            width: 5px;
+            position: absolute;
+            height: 18px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: $c-turquoise;
+        }
+    }
+
+    &__inputs {
+        width: calc(49% + 5px);
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto 0;
+            order: 2;
+        }
+        @media screen and (max-width: 480px) {
+            margin: 14px auto 0;
+        }
+    }
+
+    .input,
+    .textarea {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 27px;
+            @media screen and (max-width: 768px) {
+                width: 20px;
+            }
+        }
+
+        &+.input {
+            margin-top: 21px;
+            @media screen and (max-width: 480px) {
+                margin-top: 14px;
+            }
+        }
+    }
+
+    .textarea {
+        width: calc(49% + 5px);
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            // margin-top: 20px;
+            max-width: 500px;
+            margin: 0px auto 0;
+            order: 1;
+            height: 140px;
+        }
+        textarea {
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+
+        img {
+            top: 20px;
+            bottom: auto;
+        }
+    }
+
+    input,
+    textarea {
+        font-family: "AvantGardeCTT", sans-serif;
+        outline: none;
+        width: 100%;
+        padding: 23px 73px;
+        border: 1px solid #e8e8e8;
+        border-radius: 30px;
+        resize: none;
+        font-size: 16px;
+        letter-spacing: 0px;
+        @media screen and (max-width: 768px) {
+            padding: 18px 60px;
+        }
+    }
+
+    .btn {
+        margin-top: 23px;
+        @media screen and (max-width: 768px) {
+            padding: 18px 60px;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-top: 14px;
+        }
+    }
+}
+
+.more-link {
+    outline: none;
+    margin-top: 19px;
+    display: block;
+    font-size: 15px;
+    text-decoration: underline;
+    color: $c-turquoise;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    font-family: 'CRC65', sans-serif;
+}
+
+[data-animate] {
+    animation-fill-mode: forwards !important;
+}
+
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.6) translateY(60px);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+// @keyframes slideinDown {
+//     from {
+//         transform: translateY(-100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
+
+// @keyframes slideinUp {
+//     from {
+//         transform: translateY(100%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
+
+@keyframes slideinRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes slideinLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// @keyframes slideinDiagonal {
+//     from {
+//         transform: translate(-200%, -200%);
+//         opacity: 0;
+//         visibility: hidden;
+//     }
+
+//     to {
+//         transform: translate(0, 0);
+//         opacity: 1;
+//         visibility: visible;
+//     }
+// }
