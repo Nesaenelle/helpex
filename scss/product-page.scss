@@ -683,13 +683,13 @@
             .product-text {
                 margin-top: 26px;
                 line-height: 2em;
-                font-size: 14px;
+                font-size: 16px;
                 color: #454545;
                 padding-right: 60px;
 
                 opacity: 0;
                 visibility: hidden;
-                font-family: "AvantGardeCTT", sans-serif;
+                font-family: "circe", sans-serif;
 
                 @media screen and (max-width: 1024px) {
                     padding-right: 0;

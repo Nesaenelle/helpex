@@ -567,10 +567,10 @@
 
                     &__descr {
                         margin-top: 8px;
-                        font-size: 16px;
+                        font-size: 18px;
                         line-height: 1.7em;
                         padding: 0 265px;
-                        font-family: "AvantGardeCTT", sans-serif;
+                        font-family: "circe", sans-serif;
 
                         @media screen and (max-width: 1280px) {
                             padding: 0 170px;
@@ -584,7 +584,7 @@
                             padding: 0;
                             width: 100%;
                             margin: 10px auto 0;
-                            font-size: 14px;
+                            font-size: 16px;
                         }
 
                         @media screen and (max-width: 480px) {
@@ -1263,7 +1263,7 @@
                         @media screen and (max-width: 768px) {
                             // margin: 0;
                             padding: 25px 30px 25px 35px;
-                            font-size: 14px;
+                            font-size: 16px;
                         }
 
                         @media screen and (max-width: 480px) {
@@ -1338,7 +1338,7 @@
 
                         @media screen and (max-width: 768px) {
                             padding: 25px 30px 25px 35px;
-                            font-size: 14px;
+                            font-size: 16px;
                         }
 
                         @media screen and (max-width: 480px) {
@@ -1411,7 +1411,8 @@
                     max-width: 728px;
                     height: 100%;
                     top: 0;
-                    font-family: "AvantGardeCTT", sans-serif;
+                    font-size: 18px;
+                    font-family: "circe", sans-serif;
                     // background: #fff;
 
                     @media screen and (max-width: 1024px) {

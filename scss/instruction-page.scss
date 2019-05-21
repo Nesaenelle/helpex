@@ -225,7 +225,7 @@
             }
 
             p {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 1.75em;
                 margin-left: 20px;
             }
@@ -287,10 +287,10 @@
                 ul {
                     li {
                         padding-left: 20px;
-                        font-size: 14px;
+                        font-size: 16px;
                         padding: 11px 0 0 55px;
                         position: relative;
-                        font-family: "AvantGardeCTT", sans-serif;
+                        font-family: "circe", sans-serif;
 
                         &:after {
                             content: "";
@@ -320,12 +320,12 @@
 
                 ul {
                     li {
-                        font-size: 14px;
+                        font-size: 16px;
                         padding: 6px 0 0 0;
                         text-indent: 55px;
                         line-height: 1.95em;
                         position: relative;
-                         font-family: "AvantGardeCTT", sans-serif;
+                        font-family: "circe", sans-serif;
 
                         &:after {
                             content: '';

@@ -20,7 +20,8 @@ body {
 }
 
 p {
-    font-family: "AvantGardeCTT", sans-serif;
+    // font-family: "AvantGardeCTT", sans-serif;
+    font-family: "circe", sans-serif;
 }
 
 .container {
@@ -279,7 +280,7 @@ main {
 
     input,
     textarea {
-        font-family: "AvantGardeCTT", sans-serif;
+            font-family: "circe", sans-serif;
         outline: none;
         width: 100%;
         padding: 23px 73px;
